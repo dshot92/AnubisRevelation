@@ -36,6 +36,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awareness_radius: 10
   player: {fileID: -927199367670048503, guid: 2eaacfc4e37b6914988a9955d6f1968e, type: 3}
+--- !u!136 &3582585938906304879
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691264934110804138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5691264934110707276
 PrefabInstance:
   m_ObjectHideFlags: 0

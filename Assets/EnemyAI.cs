@@ -18,7 +18,7 @@ public class EnemyAI : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
@@ -49,5 +49,13 @@ public class EnemyAI : MonoBehaviour
 
         //if in meele range attack
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("sword"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemRotator : MonoBehaviour
 {
-    float r_speed = 10f;
+    public float r_speed = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,9 @@ public class ItemRotator : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Rotate(transform.up, r_speed * Time.deltaTime);
+        //transform.RotateAround(Vector3.up, transform.position, r_speed);
+        transform.RotateAroundLocal(Vector3.up, r_speed * Time.deltaTime);
+        //transform.Rotate(Vector3.up, r_speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)

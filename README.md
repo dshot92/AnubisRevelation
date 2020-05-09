@@ -24,3 +24,6 @@ https://sketchfab.com/3d-models/lowpoly-gold-coin-34794c00e9d140f6b86e930fef18b0
 
 Low Poly Mummy
 https://assetstore.unity.com/packages/3d/characters/free-mummy-monster-134212
+
+Polygonal Foliage Asset Package
+https://sketchfab.com/3d-models/polygonal-foliage-asset-package-e3c1a1a51788440c9c26c155e6b40f8f
