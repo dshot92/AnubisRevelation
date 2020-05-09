@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     public float awareness_radius = 10f;
     Animator anim;
 
-    public CharacterController player;
+    public GameObject player;
     NavMeshAgent agent;
 
     void Start()

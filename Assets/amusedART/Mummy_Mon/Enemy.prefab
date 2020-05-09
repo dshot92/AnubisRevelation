@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   awareness_radius: 10
-  player: {fileID: 0}
+  player: {fileID: -927199367670048503, guid: 2eaacfc4e37b6914988a9955d6f1968e, type: 3}
 --- !u!1001 &5691264934110707276
 PrefabInstance:
   m_ObjectHideFlags: 0
