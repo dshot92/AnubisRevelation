@@ -76,9 +76,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MoveDir.y = 0f;
                 m_Jumping = false;
             }
+
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
             {
                 m_MoveDir.y = 0f;
+
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
@@ -114,6 +116,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_MoveDir.y = -m_StickToGroundForce;
 
+                
                 if (m_Jump)
                 {
                     m_MoveDir.y = m_JumpSpeed;
@@ -130,6 +133,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
+
 
             m_MouseLook.UpdateCursorLock();
         }
@@ -209,6 +213,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             bool waswalking = m_IsWalking;
+
 
 #if !MOBILE_INPUT
             // On standalone builds, walk/run speed is modified by a key press.

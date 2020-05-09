@@ -26,7 +26,7 @@ public class EnemyAI : MonoBehaviour
         //Does enemy have line of sight with player?
 
         // Raycast is a line. Need a sphere of perception
-        RaycastHit hit;
+        ///RaycastHit hit;
         
         //if (Physics.SphereCast(agent.transform.position, awareness_radius,  agent.transform.forward, out hit, 1000f))
         //{
