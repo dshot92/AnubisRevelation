@@ -21,3 +21,6 @@ https://sketchfab.com/3d-models/low-poly-environment-assets-2d7f5f53dfe24f419cc0
 
 Low Poly Coin
 https://sketchfab.com/3d-models/lowpoly-gold-coin-34794c00e9d140f6b86e930fef18b009
+
+Low Poly Mummy
+https://assetstore.unity.com/packages/3d/characters/free-mummy-monster-134212
