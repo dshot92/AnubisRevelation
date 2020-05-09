@@ -27,3 +27,12 @@ https://assetstore.unity.com/packages/3d/characters/free-mummy-monster-134212
 
 Polygonal Foliage Asset Package
 https://sketchfab.com/3d-models/polygonal-foliage-asset-package-e3c1a1a51788440c9c26c155e6b40f8f
+
+
+TODO
+[] - Audio in game
+[] - Volume Slider
+[] - Levels 2-3
+[] - Implement Damaging system
+[] - GUI (coins, health)
+[] - Load - Save
