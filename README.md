@@ -93,14 +93,16 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 ------
 
 ### TODO
-
-- [ ] Audio in game
-- [ ] Volume Slider
-- [ ] ESC pause game
-- [ ] Levels 2-3
 - [X] Implement Damaging system
 - [x] Enemy random walk?
+- [x] Sandy jump sound
+
+- [ ] Collectables
+- [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
+- [ ] Audio in game ( music(Tomb Raider??) + wind effect )
+- [ ] Volume Slider (in main menu and pause menu)
+- [ ] ESC pause game
+- [ ] Levels 2-3
 - [ ] GUI (coins)
+- [ ] Mummies Sand footsteps sound (Sound Locations???)
 - [ ] Load - Save (How?)
-- [ ] Sandy jump sound
-- [ ] Mummies Sand footsteps sound 
