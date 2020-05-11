@@ -102,3 +102,5 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 - [x] Enemy random walk?
 - [ ] GUI (coins)
 - [ ] Load - Save (How?)
+- [ ] Sandy jump sound
+- [ ] Mummies Sand footsteps sound 

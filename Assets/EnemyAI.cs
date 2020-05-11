@@ -40,11 +40,23 @@ public class EnemyAI : MonoBehaviour
         {
             anim.SetBool("enemy_spotted", true);
             //Random walk
-            if(agent.pathStatus == NavMeshPathStatus.PathComplete)
+            /// https://answers.unity.com/questions/475066/how-to-get-a-random-point-on-navmesh.html
+             
+            // If 1/5 of destination left rework another random one
+            ///TODO
+            // life value could act as a swiftness multiplier, creating a more chaotically pattern based on remaining lifes points
+            if(agent.remainingDistance < walk_radius / 5 )
             {
-                agent.SetDestination(Random.insideUnitSphere * walk_radius + agent.transform.position);
+                Vector3 randomDirection = Random.insideUnitSphere * walk_radius;
+                randomDirection += transform.position;
+                NavMeshHit hit;
+                Vector3 finalPosition = Vector3.zero;
+                if (NavMesh.SamplePosition(randomDirection, out hit, walk_radius, 1))
+                {
+                    finalPosition = hit.position;
+                }
+                agent.SetDestination(finalPosition);
             }
-
         }
 
         life_text.text = (life.ToString());

@@ -15,9 +15,7 @@ public class ItemRotator : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //transform.RotateAround(Vector3.up, transform.position, r_speed);
-        transform.RotateAroundLocal(Vector3.up, r_speed * Time.deltaTime);
-        //transform.Rotate(Vector3.up, r_speed * Time.deltaTime);
+        transform.Rotate(Vector3.up, r_speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
