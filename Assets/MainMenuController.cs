@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MainMenuController : MonoBehaviour
 {
+    public Slider volume_slider;
+    public AudioSource audioSource;
 
     public void Level1()
     {
@@ -24,4 +28,10 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void VolumeUpdate()
+    {
+        audioSource.volume = volume_slider.value;
+    }
+
 }
