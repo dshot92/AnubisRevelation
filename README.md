@@ -99,5 +99,6 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 - [ ] ESC pause game
 - [ ] Levels 2-3
 - [ ] Implement Damaging system
+- [x] Enemy random walk?
 - [ ] GUI (coins)
-- [ ] Load - Save
+- [ ] Load - Save (How?)

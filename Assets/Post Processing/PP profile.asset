@@ -49,6 +49,53 @@ MonoBehaviour:
   quality:
     overrideState: 0
     value: 2
+--- !u!114 &-5397078458177541223
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 4.94
+  threshold:
+    overrideState: 1
+    value: 1
+  softKnee:
+    overrideState: 0
+    value: 0.5
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 10
+  anamorphicRatio:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0
 --- !u!114 &-5175980074543512295
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1405,6 +1452,8 @@ MonoBehaviour:
   - {fileID: 2729628696860019431}
   - {fileID: -6557359986705036421}
   - {fileID: -2107708431362845600}
+  - {fileID: 7533101347390999997}
+  - {fileID: -5397078458177541223}
 --- !u!114 &1420961689686511018
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1422,14 +1471,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   focusDistance:
-    overrideState: 1
+    overrideState: 0
     value: 12.43
   aperture:
     overrideState: 1
-    value: 0.1
+    value: 32
   focalLength:
     overrideState: 1
-    value: 14
+    value: 206
   kernelSize:
     overrideState: 1
     value: 0
@@ -1463,7 +1512,7 @@ MonoBehaviour:
     value: 0.412
   smoothness:
     overrideState: 1
-    value: 0.2
+    value: 0.303
   roundness:
     overrideState: 0
     value: 1
@@ -1505,3 +1554,25 @@ MonoBehaviour:
   lumContrib:
     overrideState: 1
     value: 0.643
+--- !u!114 &7533101347390999997
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 1
+    value: 9
+  sampleCount:
+    overrideState: 1
+    value: 10

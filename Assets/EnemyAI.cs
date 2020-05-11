@@ -1,12 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
+using TMPro;
 
 public class EnemyAI : MonoBehaviour
 {
     [Range(0f,500f)]
     public float awareness_radius = 10f;
+    [Range(0f, 500f)]
+    public float walk_radius = 100f;
+
+    public TextMeshProUGUI life_text;
+
     Animator anim;
 
     public int life = 2;
@@ -32,9 +38,16 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            anim.SetBool("enemy_spotted", false);
-            agent.SetDestination(agent.transform.position);
+            anim.SetBool("enemy_spotted", true);
+            //Random walk
+            if(agent.pathStatus == NavMeshPathStatus.PathComplete)
+            {
+                agent.SetDestination(Random.insideUnitSphere * walk_radius + agent.transform.position);
+            }
+
         }
+
+        life_text.text = (life.ToString());
 
         //if in meele range attack
 
