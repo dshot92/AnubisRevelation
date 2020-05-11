@@ -96,6 +96,7 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 - [X] Implement Damaging system
 - [x] Enemy random walk?
 - [x] Sandy jump sound
+- [x] Mummies Sand footsteps sound (Sound Locations???)
 
 - [ ] Collectables
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
@@ -104,5 +105,4 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 - [ ] ESC pause game
 - [ ] Levels 2-3
 - [ ] GUI (coins)
-- [ ] Mummies Sand footsteps sound (Sound Locations???)
 - [ ] Load - Save (How?)
