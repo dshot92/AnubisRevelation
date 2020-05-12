@@ -114,9 +114,9 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [x] Loop storm sound in-game
 
 - [ ] Collectables
+- [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
+- [ ] GUI (coins)
 - [ ] Main menu camera wonders around to much. Clamp it straight
 - [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
-- [ ] GUI (coins)
-- [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
