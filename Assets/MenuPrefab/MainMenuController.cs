@@ -11,6 +11,11 @@ public class MainMenuController : MonoBehaviour
     public Slider volume_slider;
     public AudioSource audioSource;
 
+    private void Awake()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void Level1()
     {
         SceneManager.LoadScene("Level1");

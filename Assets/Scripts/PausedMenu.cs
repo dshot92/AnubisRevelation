@@ -9,6 +9,7 @@ public class PausedMenu : MonoBehaviour
     public Slider volume_slider;
     public AudioSource audioSource;
 
+
     public GameObject pauseCanvas;
     public GameObject optionMenu;
 
@@ -19,21 +20,30 @@ public class PausedMenu : MonoBehaviour
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         pauseCanvas.SetActive(false);
         optionMenu.SetActive(false);
         audioSource.UnPause();
+        Time.timeScale = 1;
+
     }
     public void Pause()
     {
-        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         audioSource.Pause();
         pauseCanvas.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void MainMenuLoad()
     {
+
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void VolumeUpdate()
@@ -47,12 +57,13 @@ public class PausedMenu : MonoBehaviour
         {
             if (Time.timeScale == 0)
             {
+                //pauseCanvas.SetActive(false);
                 Resume();
-                pauseCanvas.SetActive(false);
             }
             else
             {
                 Pause();
+               
             }
         }
     }

@@ -96,6 +96,9 @@ https://assetstore.unity.com/packages/tools/input-management/save-game-110382#re
 Game Music
 https://krystal-may.itch.io/into-the-sand-krystal-may
 
+FREE Skybox Extended Shader
+https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-107400
+
 
 ------
 
@@ -106,11 +109,12 @@ https://krystal-may.itch.io/into-the-sand-krystal-may
 - [x] Mummies Sand footsteps sound (Sound Locations???)
 - [x] Volume Slider (in main menu and pause menu)
 - [x] Audio in game ( music(Tomb Raider??) + wind effect )
+- [X] ESC pause game
+- [X] Resolt first esc press problem
+- [x] Loop storm sound in-game
 
-- [ ] ESC pause game
 - [ ] Collectables
 - [ ] Main menu camera wonders around to much. Clamp it straight
-- [ ] Loop storm sound in-game
 - [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
