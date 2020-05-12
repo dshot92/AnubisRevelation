@@ -122,3 +122,4 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
+- [ ] .Exe Game Icon 
