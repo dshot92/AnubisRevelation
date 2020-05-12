@@ -66,14 +66,14 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 3103235594724414047}
   - component: {fileID: 3103235594711074015}
   - component: {fileID: 3103235594712874591}
-  - component: {fileID: -461171981406827190}
+  - component: {fileID: 636840323}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -348,7 +348,9 @@ MonoBehaviour:
   m_FootstepSounds:
   - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
-  m_FootstepSounds_sand: []
+  m_FootstepSounds_sand:
+  - {fileID: 8300000, guid: 22484335aac31b142ad16a7ae3d2ed4d, type: 3}
+  - {fileID: 8300000, guid: d256b584d96ad484ab4415e0a6068c75, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!54 &3103235594711074015
@@ -463,7 +465,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!81 &-461171981406827190
+--- !u!81 &636840323
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -506,7 +508,7 @@ MonoBehaviour:
   sword: {fileID: 6354866334512055291}
   meele_power: 1
   meele_range: 2
-  knokbackDist: 1
+  knokbackDist: 3
   attack_cooldown: 1
   elapsed_time: 0
 --- !u!65 &2047170821152769021

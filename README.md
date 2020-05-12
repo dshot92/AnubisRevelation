@@ -112,6 +112,7 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [X] ESC pause game
 - [X] Resolt first esc press problem
 - [x] Loop storm sound in-game
+- [x] Eye Exposure Adaptation
 
 - [ ] Collectables
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
@@ -120,3 +121,4 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
+- [ ] Final build to have only 1 player and don't destroy him while scene switching??

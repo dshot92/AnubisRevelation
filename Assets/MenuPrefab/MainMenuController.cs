@@ -15,6 +15,7 @@ public class MainMenuController : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
     }
     public void Level1()
     {
