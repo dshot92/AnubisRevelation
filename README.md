@@ -90,6 +90,13 @@ https://sketchfab.com/3d-models/polygonal-foliage-asset-package-e3c1a1a51788440c
 Simple Gems Ultimate Animated Customizable Pack
 https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764
 
+Save Game Assets
+https://assetstore.unity.com/packages/tools/input-management/save-game-110382#reviews
+
+Game Music
+https://krystal-may.itch.io/into-the-sand-krystal-may
+
+
 ------
 
 ### TODO
@@ -100,10 +107,12 @@ https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-cus
 - [x] Volume Slider (in main menu and pause menu)
 - [x] Audio in game ( music(Tomb Raider??) + wind effect )
 
-- [ ] Collectables
-- [ ] Loop storm sound in-game 
-- [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] ESC pause game
+- [ ] Collectables
+- [ ] Main menu camera wonders around to much. Clamp it straight
+- [ ] Loop storm sound in-game
+- [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
+- [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
 - [ ] GUI (coins)
-- [ ] Load - Save (How?)
+- [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))

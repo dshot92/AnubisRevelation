@@ -6,6 +6,7 @@ TagManager:
   tags:
   - sword
   - Enemy
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

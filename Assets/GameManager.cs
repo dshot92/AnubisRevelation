@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private bool dontDestroyOnLoad; // the object will move from one scene to another (you only need to add it once)
+	void Awake()
+	{
+		if (dontDestroyOnLoad) DontDestroyOnLoad(transform.gameObject);
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Update()
+	{
+
+	}
 }
