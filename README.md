@@ -120,13 +120,13 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] Player sound is too loud
 - [x] Audio Stuff
 - [x] Pause Menu won't work on Scene2 (Creating a Canvas always create a Event System -Adding one solved problem)
+- [x] GameManager Singleton
+- [x] Main menu camera wonders around to much. Clamp it straight
 
-- [ ] GameManager Singleton 
 - [ ] Collectables
 - [ ] Enemy Death status and animation
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] GUI (coins)
-- [ ] Main menu camera wonders around to much. Clamp it straight
 - [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
