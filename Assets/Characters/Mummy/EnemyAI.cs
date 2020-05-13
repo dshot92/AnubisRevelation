@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
         if (elapsed_time > sound_cooldown && !attack)
         {
             elapsed_time = 0f;
-            audioSource.volume = (1 / distancePlayer);
+            audioSource.volume = (1 / distancePlayer / distancePlayer);  // Inverse square law
             audioSource.Play();
         }
 

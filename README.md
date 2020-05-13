@@ -97,6 +97,11 @@ https://krystal-may.itch.io/into-the-sand-krystal-may
 FREE Skybox Extended Shader
 https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-107400
 
+Desert Wind Loop Sound
+https://retired.sounddogs.com/sound-effects/wind-barstow-gusty-moan-156366
+
+Low Poly Rocks Pack
+http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 
 ------
 
@@ -111,9 +116,14 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [X] Resolt first esc press problem
 - [x] Loop storm sound in-game
 - [x] Eye Exposure Adaptation
-- [X] World space Health bar (while watching down it can be seen) 
+- [X] World space Health bar (while watching down it can be seen)
+- [x] Player sound is too loud
+- [x] Audio Stuff
+- [x] Pause Menu won't work on Scene2 (Creating a Canvas always create a Event System -Adding one solved problem)
 
+- [ ] GameManager Singleton 
 - [ ] Collectables
+- [ ] Enemy Death status and animation
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] GUI (coins)
 - [ ] Main menu camera wonders around to much. Clamp it straight

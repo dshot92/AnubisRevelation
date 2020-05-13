@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume_slider: {fileID: 5158275648017107136}
-  audioSource: {fileID: 0}
+  audioSource: []
 --- !u!1 &5158275648038752301
 GameObject:
   m_ObjectHideFlags: 0

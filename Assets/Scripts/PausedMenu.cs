@@ -7,15 +7,14 @@ using UnityEngine.UI;
 public class PausedMenu : MonoBehaviour
 {
     public Slider volume_slider;
-    public AudioSource audioSource;
-
+    public AudioSource[] audioSource;
 
     public GameObject pauseCanvas;
     public GameObject optionMenu;
 
-    private void Awake()
+    private void Start()
     {
-        audioSource = GameObject.FindObjectOfType<AudioSource>();
+        audioSource = GameObject.FindObjectsOfType<AudioSource>();
     }
 
     public void Resume()
@@ -24,7 +23,10 @@ public class PausedMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseCanvas.SetActive(false);
         optionMenu.SetActive(false);
-        audioSource.UnPause();
+        foreach (AudioSource sound in audioSource)
+        {
+            sound.UnPause();
+        }
         Time.timeScale = 1;
 
     }
@@ -32,7 +34,11 @@ public class PausedMenu : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        audioSource.Pause();
+
+        foreach (AudioSource sound in audioSource)
+        {
+            sound.Pause();
+        }
         pauseCanvas.SetActive(true);
         Time.timeScale = 0;
     }
@@ -48,16 +54,18 @@ public class PausedMenu : MonoBehaviour
 
     public void VolumeUpdate()
     {
-        audioSource.volume = volume_slider.value;
+        foreach(AudioSource sound in audioSource)
+        {
+            sound.volume = volume_slider.value;
+        }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) )
         {
             if (Time.timeScale == 0)
             {
-                //pauseCanvas.SetActive(false);
                 Resume();
             }
             else

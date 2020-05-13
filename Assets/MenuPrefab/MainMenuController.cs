@@ -9,13 +9,13 @@ using UnityEngine.Audio;
 public class MainMenuController : MonoBehaviour
 {
     public Slider volume_slider;
-    public AudioSource audioSource;
+    public AudioSource[] audioSource;
 
     private void Awake()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-
+        audioSource = GameObject.FindObjectsOfType<AudioSource>();
     }
     public void Level1()
     {
@@ -37,7 +37,10 @@ public class MainMenuController : MonoBehaviour
 
     public void VolumeUpdate()
     {
-        audioSource.volume = volume_slider.value;
+        foreach (AudioSource sound in audioSource)
+        {
+            sound.volume = volume_slider.value;
+        }
     }
 
 }
