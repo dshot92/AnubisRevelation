@@ -67,19 +67,19 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.5
+    value: 0.2
   threshold:
     overrideState: 0
-    value: 1
+    value: 3
   softKnee:
     overrideState: 0
     value: 0.5
   clamp:
     overrideState: 0
-    value: 65472
+    value: 1
   diffusion:
     overrideState: 0
-    value: 10
+    value: 3.13
   anamorphicRatio:
     overrideState: 0
     value: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 51.265884, y: 99}
+    value: {x: 95.57284, y: 99}
   minLuminance:
     overrideState: 1
     value: -4.58
@@ -298,7 +298,7 @@ MonoBehaviour:
     value: 0
   speedUp:
     overrideState: 1
-    value: 2
+    value: 3.5
   speedDown:
     overrideState: 1
-    value: 1
+    value: 2

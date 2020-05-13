@@ -61,8 +61,6 @@ All’interno del gioco ci saranno a disposizione 3 differenti **power-up** per 
 
 ### File Sources
 
-Low-Poly Environment Assets
-
 LowPoly Environment Pack
 https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
 
@@ -113,6 +111,7 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [X] Resolt first esc press problem
 - [x] Loop storm sound in-game
 - [x] Eye Exposure Adaptation
+- [X] World space Health bar (while watching down it can be seen) 
 
 - [ ] Collectables
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
@@ -122,4 +121,4 @@ https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-10
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
-- [ ] .Exe Game Icon 
+- [ ] .Exe Game Icon
