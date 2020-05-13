@@ -130,5 +130,6 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Levels 2-3
+- [ ] Create Camera Post Process Profile For night effect on Level3
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
 - [ ] .Exe Game Icon
