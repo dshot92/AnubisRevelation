@@ -2,32 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ItemRotator : MonoBehaviour
 {
-    public float r_speed = 2f;
+    public float item_rotating_speed = 2f;
 
     // Creato just one script to handle multiples (for this case only 3, that's why i'm doing it, objects type and characteristics
 
     //Assign type of item from inspector and everything is handles in the trigger collision
+    [Header("Heart:")]
     public bool is_heart = false;
-    public bool is_amulet = false;
-    public bool is_sword = false;
-    public bool is_flash = false;
-    public bool is_heartthird = false;
-
     public int healt_increase = 1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    [Space(1)]
+    [Header("Amulet:")]
+    public bool is_amulet = false;
 
-    }
+    [Space(1)]
+    [Header("")]
+    public bool is_sword = false;
+    
+    [Space(1)]
+    [Header("")]
+    public bool is_flash = false;
+    public float speed_seconds;
+    public float speed_multiplier;
+
+    [Space(1)]
+    [Header("")]
+    public bool is_heartthird = false;
+
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.RotateAround(Vector3.up, r_speed * Time.deltaTime);
+        transform.RotateAround(Vector3.up, item_rotating_speed * Time.deltaTime);
         //transform.Rotate(Vector3.up, r_speed * Time.deltaTime);
     }
 
@@ -50,7 +61,13 @@ public class ItemRotator : MonoBehaviour
 
             if (is_flash)
             {
-               
+                // i need FPS controller here
+             
+
+                // Idea for Coroutine implementation for speeding up player
+                // https://stackoverflow.com/questions/57929638/action-for-a-period-of-time-unity
+                StartCoroutine(Player_speedup(other.gameObject));
+
             }
 
             if (is_amulet)
@@ -62,8 +79,27 @@ public class ItemRotator : MonoBehaviour
             {
                 player.sword.SetActive(true);
             }
-            Destroy(gameObject);
-        }
 
+            // If gameobject is destroye no coroutine can be done!!!!!!
+            // Destroy it inside the coroutine
+            
+        }
+    }
+
+    public IEnumerator Player_speedup(GameObject player)
+    {
+        FirstPersonController p = player.GetComponent<FirstPersonController>();
+        p.m_RunSpeed *= speed_multiplier;
+        p.m_WalkSpeed *= speed_multiplier;
+
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+
+        yield return new WaitForSeconds(speed_seconds);
+
+        p.m_RunSpeed /= speed_multiplier;
+        p.m_WalkSpeed /= speed_multiplier;
+
+        Destroy(gameObject);
     }
 }

@@ -126,14 +126,14 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] GameManager Singleton
 - [x] Main menu camera wonders around to much. Clamp it straight
 - [x] Amulet Blender
+- [X] Collectables
+- [X] PowerUp are seconds dependant (coroutines)
 
-- [ ] Collectables
 - [ ] Levels 2-3
-- [ ] How to get 40 seconds of speed up??
 - [ ] Spawn Point in level eye should showcase Eye exposure adaptation.
 - [ ] Enemy Death status and animation
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
-- [ ] GUI (coins)
+- [ ] GUI (ex coins)
 - [ ] Transition Animaiton during Scene Loading (Maybe give info on gameplay in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Create Camera Post Process Profile For night effect on Level3
