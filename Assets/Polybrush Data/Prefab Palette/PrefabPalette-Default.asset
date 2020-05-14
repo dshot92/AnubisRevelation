@@ -64,3 +64,131 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Rock_2 Collider
+  - gameObject: {fileID: 181024, guid: a3a4deaa527b04349b7e654056ee42de, type: 3}
+    settings:
+      m_Strength: 14.642857
+      m_RotationRangeMin: {x: 0, y: 106.05809, z: 0}
+      m_RotationRangeMax: {x: 0, y: 291.28632, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 2.9607844, y: 6.2287583}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tiles_m_2C_05
+  - gameObject: {fileID: 100088, guid: 1b2be9721563cba41830f0f6571e9fbd, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tiles_m_2C_06
+  - gameObject: {fileID: 130246, guid: 813e0c0f5fa6cc942acd8fe738d6df26, type: 3}
+    settings:
+      m_Strength: 41.68067
+      m_RotationRangeMin: {x: 0, y: 46.307053, z: 0}
+      m_RotationRangeMax: {x: 0, y: 135.93361, z: 0}
+      m_ScaleRangeMin: {x: 2.618257, y: 2.7842324, z: 1}
+      m_ScaleRangeMax: {x: 3.53112, y: 3.8630702, z: 1.9543569}
+      m_UniformScale: {x: 2.503268, y: 5.575164}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tile_m_2C_11
+  - gameObject: {fileID: 132036, guid: 346c3ccca98684f4bbaf0afb796f404a, type: 3}
+    settings:
+      m_Strength: 14.642857
+      m_RotationRangeMin: {x: 0, y: 8.962656, z: 0}
+      m_RotationRangeMax: {x: 0, y: 56.76349, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 2.503268, y: 7.078431}
+      m_UniformBool: 1
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tile_crk_m_2C_01
+  - gameObject: {fileID: 115310, guid: e6f55ad837d19aa419e08112c201bf1d, type: 3}
+    settings:
+      m_Strength: 13.06303
+      m_RotationRangeMin: {x: 0, y: 104.564316, z: 0}
+      m_RotationRangeMax: {x: 0, y: 241.9917, z: 0}
+      m_ScaleRangeMin: {x: 3.033195, y: 2.9917011, z: 2.738589}
+      m_ScaleRangeMax: {x: 5.564315, y: 5.356847, z: 5.6016593}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Rock_Tiles_m_2C_13
+  - gameObject: {fileID: 116152, guid: 111c20de21050684a9f8f414cc7cec88, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 101.57677, z: 0}
+      m_RotationRangeMax: {x: 0, y: 246.47304, z: 0}
+      m_ScaleRangeMin: {x: 2.5352697, y: 1.8298755, z: 2.86722}
+      m_ScaleRangeMax: {x: 4.319502, y: 3.8215766, z: 5.024896}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Rock_Tiles_m_2C_11
+  - gameObject: {fileID: 115310, guid: e6f55ad837d19aa419e08112c201bf1d, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 77.676346, z: 0}
+      m_RotationRangeMax: {x: 0, y: 150.87137, z: 0}
+      m_ScaleRangeMin: {x: 2.078838, y: 1.539419, z: 2.1161826}
+      m_ScaleRangeMax: {x: 4.5684643, y: 3.8630705, z: 4.8547716}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 0
+      m_ZScaleBool: 1
+    name: Rock_Tiles_m_2C_13
+  - gameObject: {fileID: 162660, guid: 61f667a4a8c71b849b44e42dbedd00b9, type: 3}
+    settings:
+      m_Strength: 20.882353
+      m_RotationRangeMin: {x: 0, y: 73.19502, z: 0}
+      m_RotationRangeMax: {x: 0, y: 192.69711, z: 0}
+      m_ScaleRangeMin: {x: 2.5352697, y: 3.4481328, z: 3.0746887}
+      m_ScaleRangeMax: {x: 5.4398346, y: 6.3526974, z: 5.8547716}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 1
+      m_ZRotationBool: 0
+      m_XScaleBool: 1
+      m_YScaleBool: 1
+      m_ZScaleBool: 1
+    name: Rock_Tiles_m_2C_12

@@ -122,6 +122,7 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] Pause Menu won't work on Scene2 (Creating a Canvas always create a Event System -Adding one solved problem)
 - [x] GameManager Singleton
 - [x] Main menu camera wonders around to much. Clamp it straight
+- [x] Amulet Blender
 
 - [ ] Collectables
 - [ ] Enemy Death status and animation
