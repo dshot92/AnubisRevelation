@@ -30,9 +30,10 @@ public class ItemRotator : MonoBehaviour
     public float speed_multiplier;
 
     [Space(1)]
-    [Header("")]
-    public bool is_heartthird = false;
-
+    [Header("Force")]
+    public bool is_force = false;
+    public int force_multiplier;
+    public float force_seconds;
 
 
     // Update is called once per frame
@@ -52,18 +53,17 @@ public class ItemRotator : MonoBehaviour
             {
                 player.life += healt_increase;
                 player.life %= player.max_life;
+                Destroy(gameObject);
             }
 
             if (is_sword)
-            {
+            { 
                 player.sword.SetActive(true);
+                Destroy(gameObject);
             }
 
             if (is_flash)
             {
-                // i need FPS controller here
-             
-
                 // Idea for Coroutine implementation for speeding up player
                 // https://stackoverflow.com/questions/57929638/action-for-a-period-of-time-unity
                 StartCoroutine(Player_speedup(other.gameObject));
@@ -75,9 +75,9 @@ public class ItemRotator : MonoBehaviour
                 GameManager.NextScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
 
-            if (is_heart)
+            if (is_force)
             {
-                player.sword.SetActive(true);
+                StartCoroutine(Player_IncreaseMeele(player));
             }
 
             // If gameobject is destroye no coroutine can be done!!!!!!
@@ -86,14 +86,31 @@ public class ItemRotator : MonoBehaviour
         }
     }
 
+    public IEnumerator Player_IncreaseMeele(PlayerController p)
+    {
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+   
+        p.meele_power += force_multiplier;
+
+
+        yield return new WaitForSeconds(force_seconds);
+
+        p.meele_power -= force_multiplier;
+
+        Destroy(gameObject);
+    }
+
     public IEnumerator Player_speedup(GameObject player)
     {
         FirstPersonController p = player.GetComponent<FirstPersonController>();
+        
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+       
         p.m_RunSpeed *= speed_multiplier;
         p.m_WalkSpeed *= speed_multiplier;
 
-        gameObject.GetComponent<SphereCollider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
 
         yield return new WaitForSeconds(speed_seconds);
 

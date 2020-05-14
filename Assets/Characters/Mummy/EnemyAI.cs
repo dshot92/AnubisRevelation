@@ -15,8 +15,6 @@ public class EnemyAI : MonoBehaviour
     public float walk_radius = 100f;
 
     bool attack = false;
-    bool walk_to_player = false;
-    bool random_walk= false;
 
     public TextMeshProUGUI life_text;
 
@@ -100,7 +98,7 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        Debug.Log(sound_cooldown.ToString());
+        //Debug.Log(sound_cooldown.ToString());
         if (elapsed_time > sound_cooldown && !attack)
         {
             elapsed_time = 0f;
@@ -111,13 +109,11 @@ public class EnemyAI : MonoBehaviour
         // uPDATE lIFE TEXT
         life_text.text = (life.ToString());
 
-        if (life == 0)
+        if (life <= 0)
         {
             Destroy(gameObject);
         }
 
         attack = false;
-        walk_to_player = false;
-        random_walk = false;
     }
 }
