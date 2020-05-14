@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour
     public float knokbackDist;
     public float attack_cooldown = 1f;
     public float elapsed_time = 0f;
+
+    public int life = 10;
+    public int max_life = 10;
+
     Camera cam;
 
     void Start()

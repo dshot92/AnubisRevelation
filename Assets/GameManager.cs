@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
 
 	}
 
+	public static void NextScene(int scene)
+	{
+		SceneManager.LoadScene(scene);
+	}
 	private void Update()
 	{
 

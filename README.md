@@ -60,6 +60,9 @@ All’interno del gioco ci saranno a disposizione 3 differenti **power-up** per 
 
 
 ### File Sources
+Done with Blender:
+Amulet.fbx
+Flash.fbx
 
 LowPoly Environment Pack
 https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
@@ -125,12 +128,14 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] Amulet Blender
 
 - [ ] Collectables
+- [ ] Levels 2-3
+- [ ] How to get 40 seconds of speed up??
+- [ ] Spawn Point in level eye should showcase Eye exposure adaptation.
 - [ ] Enemy Death status and animation
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] GUI (coins)
-- [ ] Transition Animaiton during Scene Loading (Maybe prompt for action in there)
+- [ ] Transition Animaiton during Scene Loading (Maybe give info on gameplay in there)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
-- [ ] Levels 2-3
 - [ ] Create Camera Post Process Profile For night effect on Level3
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
 - [ ] .Exe Game Icon

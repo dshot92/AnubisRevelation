@@ -45,6 +45,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log(agent.destination);
 
         // 1) Can i hit player?
         // 2) walk to player
@@ -61,10 +62,13 @@ public class EnemyAI : MonoBehaviour
         if (distancePlayer < meele_radius)
         {
             attack = true;
+            life_text.gameObject.SetActive(true);
         }
         else if (distancePlayer < awareness_radius)
         {
             attack = false;
+            life_text.gameObject.SetActive(false);
+            life_text.gameObject.SetActive(false);
             //walk torwards player
             anim.SetBool("walking", true);
             agent.SetDestination(player.transform.position);
@@ -74,6 +78,8 @@ public class EnemyAI : MonoBehaviour
             attack = false;
             //Random walk
             anim.SetBool("walking", true);
+            life_text.gameObject.SetActive(false);
+
 
             /// https://answers.unity.com/questions/475066/how-to-get-a-random-point-on-navmesh.html
 
