@@ -129,6 +129,10 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [X] Collectables
 - [X] PowerUp are seconds dependant (coroutines)
 
+- [X] It's a fucking Desert. Can I Dig? it works with Mesh Filter
+- [ ] How to ReTriangulate around not to show void??
+
+- [ ] REsolve Audio Bug on Level1 Load
 - [ ] Levels 2-3
 - [ ] Spawn Point in level eye should showcase Eye exposure adaptation.
 - [ ] Enemy Death status and animation

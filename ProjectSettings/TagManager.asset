@@ -7,6 +7,7 @@ TagManager:
   - sword
   - Enemy
   - PauseMenu
+  - Sand
   layers:
   - Default
   - TransparentFX
