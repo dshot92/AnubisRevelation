@@ -131,11 +131,15 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] Resolve Audio Bug on Level1 Load
 - [x] Spawn Point in level eye should showcase Eye exposure adaptation.
 - [X] Glow Texture with promt to jumo with space on the first ledge?
+- [x] FPS Counter
 
 - [X] It's a fucking Desert. Can I Dig? it works with Mesh Filter
 - [ ] How to ReTriangulate around not to show void??
 
 - [ ] Levels 2-3
+- [ ] Power Up sound
+- [ ] Movement, attack, climb (Prompt)
+- [ ] Final Boss Anubi?
 - [ ] Enemy Death status and animation
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] GUI (ex coins)
