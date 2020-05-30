@@ -23,7 +23,7 @@ Material:
   m_Name: Gray.2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHABLEND_ON _BLENDMODE_ALPHA _ENABLE_FOG_ON_TRANSPARENT _MASKMAP
-    _NORMALMAP_TANGENT_SPACE _SURFACE_TYPE_TRANSPARENT
+    _NORMALMAP_TANGENT_SPACE _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -209,7 +209,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0
     - _Glossiness: 0.176
     - _GlossyReflections: 1
     - _HeightAmplitude: 0.02
@@ -227,7 +227,7 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
-    - _Metallic: 0.037934847
+    - _Metallic: 0
     - _Mode: 2
     - _NormalMapSpace: 0
     - _NormalScale: 1
@@ -288,7 +288,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.74509805, g: 0.42352942, b: 0.16470584, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.74509805, g: 0.4235294, b: 0.16470581, a: 1}
+    - _Color: {r: 0.74509805, g: 0.42352936, b: 0.16470578, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

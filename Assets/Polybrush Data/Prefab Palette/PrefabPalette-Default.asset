@@ -16,16 +16,16 @@ MonoBehaviour:
   - gameObject: {fileID: 5098636963650921732, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
       type: 3}
     settings:
-      m_Strength: 10.483193
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_Strength: 25.75
+      m_RotationRangeMin: {x: 0, y: 13.817429, z: 28.755188}
+      m_RotationRangeMax: {x: 290.16595, y: 261.78424, z: 272.24066}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
+      m_UniformScale: {x: 0.9803921, y: 1.5686269}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
@@ -33,15 +33,15 @@ MonoBehaviour:
   - gameObject: {fileID: 5433741697969922244, guid: 86ecce5013a43f44dbe1721522a89020,
       type: 3}
     settings:
-      m_Strength: 14.642857
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_Strength: 34.892857
+      m_RotationRangeMin: {x: 0, y: 13.443983, z: 0}
+      m_RotationRangeMax: {x: 147.88382, y: 158.34026, z: 101.57677}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
+      m_UniformScale: {x: 0.67320263, y: 1.9803922}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
       m_ZRotationBool: 0
       m_XScaleBool: 0
       m_YScaleBool: 0
@@ -52,50 +52,18 @@ MonoBehaviour:
     settings:
       m_Strength: 25.042017
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 360, y: 360, z: 360}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
+      m_ScaleRangeMax: {x: 3.3651452, y: 4.6099586, z: 1}
+      m_UniformScale: {x: 0.2810458, y: 1.849673}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Rock_2 Collider
-  - gameObject: {fileID: 181024, guid: a3a4deaa527b04349b7e654056ee42de, type: 3}
-    settings:
-      m_Strength: 14.642857
-      m_RotationRangeMin: {x: 0, y: 106.05809, z: 0}
-      m_RotationRangeMax: {x: 0, y: 291.28632, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 2.9607844, y: 6.2287583}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: Rock_Tiles_m_2C_05
-  - gameObject: {fileID: 100088, guid: 1b2be9721563cba41830f0f6571e9fbd, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: Rock_Tiles_m_2C_06
   - gameObject: {fileID: 130246, guid: 813e0c0f5fa6cc942acd8fe738d6df26, type: 3}
     settings:
       m_Strength: 41.68067
@@ -112,86 +80,6 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Rock_Tile_m_2C_11
-  - gameObject: {fileID: 132036, guid: 346c3ccca98684f4bbaf0afb796f404a, type: 3}
-    settings:
-      m_Strength: 69.21849
-      m_RotationRangeMin: {x: 0, y: 8.962656, z: 0}
-      m_RotationRangeMax: {x: 0, y: 56.76349, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 2.503268, y: 7.078431}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: Rock_Tile_crk_m_2C_01
-  - gameObject: {fileID: 115310, guid: e6f55ad837d19aa419e08112c201bf1d, type: 3}
-    settings:
-      m_Strength: 13.06303
-      m_RotationRangeMin: {x: 0, y: 104.564316, z: 0}
-      m_RotationRangeMax: {x: 0, y: 241.9917, z: 0}
-      m_ScaleRangeMin: {x: 3.033195, y: 2.9917011, z: 2.738589}
-      m_ScaleRangeMax: {x: 5.564315, y: 5.356847, z: 5.6016593}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Tiles_m_2C_13
-  - gameObject: {fileID: 116152, guid: 111c20de21050684a9f8f414cc7cec88, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 101.57677, z: 0}
-      m_RotationRangeMax: {x: 0, y: 246.47304, z: 0}
-      m_ScaleRangeMin: {x: 2.5352697, y: 1.8298755, z: 2.86722}
-      m_ScaleRangeMax: {x: 4.319502, y: 3.8215766, z: 5.024896}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Tiles_m_2C_11
-  - gameObject: {fileID: 115310, guid: e6f55ad837d19aa419e08112c201bf1d, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 77.676346, z: 0}
-      m_RotationRangeMax: {x: 0, y: 150.87137, z: 0}
-      m_ScaleRangeMin: {x: 2.078838, y: 1.539419, z: 2.1161826}
-      m_ScaleRangeMax: {x: 4.5684643, y: 3.8630705, z: 4.8547716}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 0
-      m_ZScaleBool: 1
-    name: Rock_Tiles_m_2C_13
-  - gameObject: {fileID: 162660, guid: 61f667a4a8c71b849b44e42dbedd00b9, type: 3}
-    settings:
-      m_Strength: 20.882353
-      m_RotationRangeMin: {x: 0, y: 73.19502, z: 0}
-      m_RotationRangeMax: {x: 0, y: 192.69711, z: 0}
-      m_ScaleRangeMin: {x: 2.5352697, y: 3.4481328, z: 3.0746887}
-      m_ScaleRangeMax: {x: 5.4398346, y: 6.3526974, z: 5.8547716}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Tiles_m_2C_12
   - gameObject: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
     settings:
       m_Strength: 15.142834
@@ -208,38 +96,6 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Rock_Square_m_2C_05
-  - gameObject: {fileID: 103254, guid: f9d57d8e81ff55c4497c58bd3b8b093b, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Square_m_2C_06
-  - gameObject: {fileID: 179146, guid: f7bd9f01c6ba3eb4ba89f86e11fb37e1, type: 3}
-    settings:
-      m_Strength: 21.382359
-      m_RotationRangeMin: {x: 31.369295, y: 43.319504, z: 0}
-      m_RotationRangeMax: {x: 56.76349, y: 110.53942, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 2.1764705, y: 4.6601305}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Square_m_2C_07
   - gameObject: {fileID: 133730, guid: 43bb08b2675207244972494295ebc740, type: 3}
     settings:
       m_Strength: 50
@@ -272,22 +128,6 @@ MonoBehaviour:
       m_YScaleBool: 1
       m_ZScaleBool: 1
     name: Rock_Square_m_2C_09
-  - gameObject: {fileID: 104862, guid: e5d82cf7bea70714bad7a6addd493304, type: 3}
-    settings:
-      m_Strength: 10.483193
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 38.838173, y: 331.61826, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 3.48366}
-      m_UniformBool: 1
-      m_XRotationBool: 1
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Square_m_2C_10
   - gameObject: {fileID: 102594, guid: 8224c16bf365d6645a408a0be060205f, type: 3}
     settings:
       m_Strength: 50
@@ -304,22 +144,6 @@ MonoBehaviour:
       m_YScaleBool: 1
       m_ZScaleBool: 1
     name: Rock_Square_m_2C_11
-  - gameObject: {fileID: 157548, guid: 82ab31e51716b5649a3b8b09ed5ab1f3, type: 3}
-    settings:
-      m_Strength: 14.642857
-      m_RotationRangeMin: {x: 26.887966, y: 74.6888, z: 0}
-      m_RotationRangeMax: {x: 50.788383, y: 264.39832, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1.0414938, y: 1, z: 1}
-      m_UniformScale: {x: 2.8300653, y: 4.7908497}
-      m_UniformBool: 1
-      m_XRotationBool: 0
-      m_YRotationBool: 1
-      m_ZRotationBool: 0
-      m_XScaleBool: 1
-      m_YScaleBool: 1
-      m_ZScaleBool: 1
-    name: Rock_Square_m_2C_12
   - gameObject: {fileID: 186650, guid: 2098c2a1ca90c13408cc0f0a3596b57c, type: 3}
     settings:
       m_Strength: 50
@@ -407,8 +231,8 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
+      m_UniformScale: {x: 5.4248366, y: 6.9281044}
+      m_UniformBool: 1
       m_XRotationBool: 0
       m_YRotationBool: 1
       m_ZRotationBool: 0
@@ -423,8 +247,8 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
+      m_UniformScale: {x: 7.189543, y: 10}
+      m_UniformBool: 1
       m_XRotationBool: 0
       m_YRotationBool: 1
       m_ZRotationBool: 0
@@ -450,13 +274,13 @@ MonoBehaviour:
     name: Rock_Square_m_2C_20
   - gameObject: {fileID: 174734, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 12.5
       m_RotationRangeMin: {x: 0, y: 77.676346, z: 0}
       m_RotationRangeMax: {x: 0, y: 90, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
       m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
+      m_UniformBool: 1
       m_XRotationBool: 0
       m_YRotationBool: 1
       m_ZRotationBool: 0
@@ -481,3 +305,102 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Enemy
+  - gameObject: {fileID: 6904410514671535043, guid: ebffa27728860544b85c90b5d9f9861f,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 144.89627, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Cat_wander
+  - gameObject: {fileID: 115310, guid: e6f55ad837d19aa419e08112c201bf1d, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tiles_m_2C_13
+  - gameObject: {fileID: 100000, guid: 27d0a4739f1bdce47b09732917882a70, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tiles_m_2C_13
+  - gameObject: {fileID: 181846, guid: a19115660f7e3e84ea3b70d09811603b, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 106.05809, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 2.764706}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock_Tiles_m_2C_13
+  - gameObject: {fileID: 728916860728927293, guid: 74765e5aebc0d5a4ab1e712f5c304e33,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Fire Torch
+  - gameObject: {fileID: 5791107255214047761, guid: de2bf99ec5f56284b8f09d543496bbd4,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Snake_angry

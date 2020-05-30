@@ -12,10 +12,12 @@ public class MenuCameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        float mouseX = Input.mousePosition.x - Screen.width / 2;
-        float mouseY = Input.mousePosition.y - Screen.height / 2;
+        float mouseY = Input.mousePosition.x - Screen.width / 2;
+        float mouseX = Input.mousePosition.y - Screen.height / 2;
         
         //Debug.Log(mouseX.ToString() + " - " + mouseY.ToString());
-        transform.Rotate(new Vector3(mouseX, mouseY, 0).normalized / damp);
+        transform.Rotate(new Vector3(mouseX, -mouseY, 0) / damp * Time.deltaTime);
+        Mathf.Clamp(transform.rotation.x, -1,1);
+        Mathf.Clamp(transform.rotation.y, -1,1);
     }
 }

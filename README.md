@@ -61,8 +61,13 @@ All’interno del gioco ci saranno a disposizione 3 differenti **power-up** per 
 
 ### File Sources
 Done with Blender:
-Amulet.fbx
-Flash.fbx
+-Amulet.fbx
+-Flash.fbx
+-pyramid.fbx
+-sphinx.fbx
+-biceps.fbx
+-desert6.fbx
+-sarcofagus.fbx
 
 LowPoly Environment Pack
 https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
@@ -106,6 +111,38 @@ https://retired.sounddogs.com/sound-effects/wind-barstow-gusty-moan-156366
 Low Poly Rocks Pack
 http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 
+Sound Effects
+https://www.soundsnap.com/
+
+Realtime NavMesh Surface
+https://github.com/Unity-Technologies/NavMeshComponents
+
+Anubis 3D models
+https://sketchfab.com/3d-models/anubis-46b69c24f12446ec9250a05aa39f79f3
+
+Anubis 3D models with clothes
+https://sketchfab.com/3d-models/anubis-with-clothes-2480d344ea694f458b4646eb876b5792
+
+Anubis Sarcofagus 3D models
+https://free3d.com/3d-model/anubisegyptianjackal-v2--985424.html
+
+Petra model
+https://3dwarehouse.sketchup.com/model/adbd74a7-c1f7-4d08-8890-ddd08a3dbc08/petra?login=true#
+
+Historic environment (For Torch)
+https://assetstore.unity.com/packages/3d/environments/historic/historic-environment-142116
+
+Unity Particle Pack
+https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325?utm_source=youtube&utm_medium=social&utm_campaign=education_global_generalpromo_2018-09-04_particle-pack&utm_content=download_video
+
+Night time Nature Sounds - High Desert Nightlife - Crickets, Relaxing
+https://www.youtube.com/watch?v=r9Ii50ZiEYU
+
+Rattle Snake Shaker Snaking A4 Sound Effect
+https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rattlesnake-281
+
+
+
 ------
 
 ### TODO
@@ -132,19 +169,25 @@ http://unityassetcollection.com/low-poly-rocks-pack-free-download/
 - [x] Spawn Point in level eye should showcase Eye exposure adaptation.
 - [X] Glow Texture with promt to jumo with space on the first ledge?
 - [x] FPS Counter
-
+- [x] Power Up sound
+- [x] Movement, attack, climb (Prompt)
 - [X] It's a fucking Desert. Can I Dig? it works with Mesh Filter
-- [ ] How to ReTriangulate around not to show void??
+- [X] How to ReTriangulate around not to show void?? (Done by creating mesh from blender)
+- [X] Levels 2 layout
+- [x] Enemy Death status and animation
+- [X] Night Light in level3
+- [x] .Exe Game Icon
+- [x] Levels 3 - Add Details
+- [x] Final Boss Anubi? (Blender??)
+- [x] Create Camera Post Process Profile For night effect on Level3
+- [x] Snake on Level3
+- [x] Lights around Level3
 
-- [ ] Levels 2-3
-- [ ] Power Up sound
-- [ ] Movement, attack, climb (Prompt)
-- [ ] Final Boss Anubi?
-- [ ] Enemy Death status and animation
+- [ ] Add sound when attacking
+- [ ] Logic for boss fight
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] GUI (ex coins)
-- [ ] Transition Animaiton during Scene Loading (Maybe give info on gameplay in there)
+- [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
 - [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
-- [ ] Create Camera Post Process Profile For night effect on Level3
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
-- [ ] .Exe Game Icon
+- [ ] Sand Storm Effect on menu???

@@ -9,11 +9,15 @@ public class GameManager : MonoBehaviour
 
 
 	public static GameManager instance = null;
+	public static PlayerController player;
+	public float pause_time = 3f;
 
-	void Awake()
+	private void OnEnable()
 	{
-		//if (dontDestroyOnLoad) DontDestroyOnLoad(gameObject);
-		
+		player = GameObject.FindObjectOfType<PlayerController>();
+	}
+	void Awake()
+	{		
 		if (instance == null)
 		{
 			instance = this;
@@ -23,7 +27,13 @@ public class GameManager : MonoBehaviour
 		{
 			Destroy(this);
 		}
+		player = GameObject.FindObjectOfType<PlayerController>();
 
+	}
+
+	void Setup()
+	{
+		player = GameObject.FindObjectOfType<PlayerController>();
 	}
 
 	public static void NextScene(int scene)
@@ -32,6 +42,23 @@ public class GameManager : MonoBehaviour
 	}
 	private void Update()
 	{
+		if(player == null)
+		{
+			player = GameObject.FindObjectOfType<PlayerController>();
+		}
 
+		if(player.life <= 0)
+		{
+			Debug.Log("GameOver");
+			Invoke("GameOver", pause_time);
+			player.life = player.max_life;
+		}
+	}
+
+
+	void GameOver()
+	{
+		SceneManager.LoadScene("MainMenu");
 	}
 }
+

@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     Animator anim;
-    public bool got_sword;
+    public bool has_sword;
+    public bool has_torch;
     public GameObject sword;
+    public GameObject torch;
     public int meele_power = 1;
     public float meele_range = 2;
     public float knokbackDist;
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float elapsed_time = 0f;
     public float dig_distance_threshold = 2;
     public Vector3 dig_amount = new Vector3(0,-2,0);
+    public Slider healtBar;
     
 
     public int life = 10;
@@ -25,17 +29,32 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        got_sword = false;
+        has_sword = false;
+        has_torch = false;
         anim = GetComponent<Animator>();
         sword.SetActive(false);
+        torch.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        elapsed_time += Time.deltaTime; 
-        
-        
+        elapsed_time += Time.deltaTime;
+
+        // HealtBar update
+        healtBar.value = life;
+
+        if (has_sword)
+        {
+            sword.SetActive(true);
+        }
+
+        if (has_torch)
+        {
+            torch.SetActive(true);
+        }
+
+
         if (Input.GetMouseButtonDown(0) && elapsed_time > attack_cooldown)
         {
             anim.SetTrigger("attack");
@@ -79,37 +98,6 @@ public class PlayerController : MonoBehaviour
                     if (meshCollider == null || meshCollider.sharedMesh == null)
                         return;
                     
-                    // WIth SImple Mesh
-                    
-                    /*
-                    Mesh mesh = meshCollider.sharedMesh;
-                    
-                    Vector3[] vertices = mesh.vertices;
-                    int[] triangles = mesh.triangles;
-                    Vector3 p0 = vertices[triangles[hit.triangleIndex * 3 + 0]];
-                    Vector3 p1 = vertices[triangles[hit.triangleIndex * 3 + 1]];
-                    Vector3 p2 = vertices[triangles[hit.triangleIndex * 3 + 2]];
-                    
-                    Transform hitTransform = hit.collider.transform;
-
-                    p0 = hitTransform.TransformPoint(p0);
-                    p1 = hitTransform.TransformPoint(p1);
-                    p2 = hitTransform.TransformPoint(p2);
-                   
-                    Debug.DrawLine(p0, p1, Color.red);
-                    Debug.DrawLine(p1, p2, Color.red);
-                    Debug.DrawLine(p2, p0, Color.red);
-
-                    vertices[triangles[hit.triangleIndex * 3 + 0]] -= dig_amount * 10;
-                    vertices[triangles[hit.triangleIndex * 3 + 2]] -= dig_amount * 10;
-                    vertices[triangles[hit.triangleIndex * 3 + 2]] -= dig_amount * 10;
-
-                    // Idea to return a new modified mesh
-                    // https://docs.unity3d.com/ScriptReference/Mesh-vertices.html
-                    mesh.vertices = vertices;
-                    mesh.RecalculateBounds();
-                    mesh.RecalculateNormals();
-                    */
 
                     MeshFilter meshF = hit.collider.GetComponent<MeshFilter>();
                     Vector3[] vertices = meshF.sharedMesh.vertices;
@@ -138,22 +126,16 @@ public class PlayerController : MonoBehaviour
                     meshF.sharedMesh.RecalculateTangents();
                     meshF.sharedMesh.RecalculateBounds();
                     meshF.sharedMesh.RecalculateNormals();
-
-                    // Way out of Reach in cost of Complexitya
-                    /*
-                    for (int i = 0; i < mesh.vertexCount; ++i)
-                    {
-                        if( Vector3.Distance(hit.transform.position, mesh.vertices[i]) < dig_distance_threshold)
-                        {
-                            mesh.vertices[i] -= dig_amount;
-                        }
-                    }
-                    */
                 }
             }
         }
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            life--;
+        }
+
+            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             anim.SetBool("walking", true);
         }

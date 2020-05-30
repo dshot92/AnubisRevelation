@@ -19,10 +19,9 @@ public class PausedMenu : MonoBehaviour
 
     public void Resume()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
         pauseCanvas.SetActive(false);
         optionMenu.SetActive(false);
+
         foreach (AudioSource sound in audioSource)
         {
             sound.UnPause();
@@ -48,8 +47,7 @@ public class PausedMenu : MonoBehaviour
 
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+       
     }
 
     public void VolumeUpdate()
@@ -66,12 +64,14 @@ public class PausedMenu : MonoBehaviour
         {
             if (Time.timeScale == 0)
             {
+                Cursor.lockState = CursorLockMode.Locked;
                 Resume();
             }
             else
             {
+                Cursor.visible = !Cursor.visible;
+                Cursor.lockState = CursorLockMode.None;
                 Pause();
-               
             }
         }
     }
