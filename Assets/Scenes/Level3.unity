@@ -34845,12 +34845,12 @@ PrefabInstance:
     - target: {fileID: 3103235594714212284, guid: 3e2f064cc0214bd4f8dd8119436da785,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3103235594714212286, guid: 3e2f064cc0214bd4f8dd8119436da785,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3103235594714212287, guid: 3e2f064cc0214bd4f8dd8119436da785,
         type: 3}
