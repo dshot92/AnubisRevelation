@@ -45,6 +45,11 @@ public class ItemRotator : MonoBehaviour
     public float jump_multiplier; 
     public float jump_seconds;
 
+    [Space(1)]
+    [Header("Coins")]
+    public bool is_coin = false;
+    public int coin_value;
+
     private void Setup()
     {
         audio = GetComponent<AudioSource>();
@@ -64,12 +69,16 @@ public class ItemRotator : MonoBehaviour
             PlayerController player = other.gameObject.GetComponentInChildren<PlayerController>();
             if (is_heart)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 player.life = player.max_life;
                 StartCoroutine(PlaySound());
             }
 
             if (is_sword)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 other.gameObject.GetComponentInChildren<PlayerController>().meele_power++;
                 player.has_sword = true;
                 StartCoroutine(PlaySound());
@@ -77,15 +86,18 @@ public class ItemRotator : MonoBehaviour
 
             if (is_torch)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 player.has_torch = true;
                 StartCoroutine(PlaySound());
-
                 // really bad, but this particles system remaining alive is annoying me
                 gameObject.transform.position -= new Vector3(0, -50, 0);
             }
 
             if (is_flash)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 // Idea for Coroutine implementation for speeding up player
                 // https://stackoverflow.com/questions/57929638/action-for-a-period-of-time-unity
                 StartCoroutine(Player_speedup(other.gameObject));
@@ -94,18 +106,33 @@ public class ItemRotator : MonoBehaviour
 
             if (is_amulet)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 StartCoroutine(PlaySoundBeforeNextLevel());
             }
 
             if (is_force)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 StartCoroutine(Player_IncreaseMeele(player));
                 StartCoroutine(PlaySound());
             }
 
             if (is_jump)
             {
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
                 StartCoroutine(Player_IncreaseJump(other.gameObject));
+                StartCoroutine(PlaySound());
+            }
+
+            if (is_coin)
+            {
+                gameObject.GetComponent<SphereCollider>().enabled = false;
+                MeshRenderer[] rend = gameObject.GetComponents<MeshRenderer>();
+                foreach (MeshRenderer r in rend) r.enabled = false;
+                StartCoroutine(Player_coins_count(player));
                 StartCoroutine(PlaySound());
             }
 
@@ -116,10 +143,7 @@ public class ItemRotator : MonoBehaviour
     }
 
     public IEnumerator Player_IncreaseMeele(PlayerController p)
-    {
-        gameObject.GetComponent<SphereCollider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-   
+    { 
         p.meele_power += force_multiplier;
 
         yield return new WaitForSeconds(force_seconds);
@@ -132,9 +156,6 @@ public class ItemRotator : MonoBehaviour
     {
         FirstPersonController p = player.GetComponent<FirstPersonController>();
 
-        gameObject.GetComponent<SphereCollider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-
         p.m_JumpSpeed *= jump_multiplier;
 
         yield return new WaitForSeconds(jump_seconds);
@@ -144,13 +165,19 @@ public class ItemRotator : MonoBehaviour
 
     }
 
+    public IEnumerator Player_coins_count(PlayerController p)
+    {
+        p.coins_count += coin_value;
+
+        yield return new WaitForSeconds(0);
+        Destroy(gameObject, audio.clip.length / 2);
+
+    }
+
     public IEnumerator Player_speedup(GameObject player)
     {
         FirstPersonController p = player.GetComponent<FirstPersonController>();
-        
-        gameObject.GetComponent<SphereCollider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
-       
+
         p.m_RunSpeed *= speed_multiplier;
         p.m_WalkSpeed *= speed_multiplier;
 
@@ -158,14 +185,12 @@ public class ItemRotator : MonoBehaviour
 
         p.m_RunSpeed /= speed_multiplier;
         p.m_WalkSpeed /= speed_multiplier;
-        //Destroy(gameObject);
+
     }
 
     public IEnumerator PlaySound()
     {
 
-        gameObject.GetComponent<Collider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
 
@@ -179,9 +204,6 @@ public class ItemRotator : MonoBehaviour
 
     public IEnumerator PlaySoundBeforeNextLevel()
     {
-
-        gameObject.GetComponent<Collider>().enabled = false;
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
         GameManager.NextScene(SceneManager.GetActiveScene().buildIndex + 1);

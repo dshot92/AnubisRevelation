@@ -183,13 +183,13 @@ https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rattlesnake-
 - [x] Snake on Level3
 - [x] Lights around Level3
 - [X] GUI (ex coins)
+- [X] Coin Sound, logic and world placement
+- [x] Add sound when attacking
+- [x] Boss TP behind after some distance?
+- [x] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
+- [x] Sand Storm Effect on menu???
 
-- [ ] Add sound when attacking
-- [ ] Coin Sound, logic and world placement
-- [ ] Boss TP behind after some distance?
 - [ ] Logic for boss fight
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
-- [ ] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??
-- [ ] Sand Storm Effect on menu???

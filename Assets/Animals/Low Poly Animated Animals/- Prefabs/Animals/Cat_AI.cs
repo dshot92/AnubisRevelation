@@ -14,25 +14,16 @@ public class Cat_AI : MonoBehaviour
     public float speed_multiplier = 2f;
     float original_speed;
     public int meele_power = 2;
-
-    bool attack = false;
-
     public TextMeshProUGUI life_text;
-
     Animator anim;
-    public Animation attack_anim;
-
     public int life = 2;
-
     GameObject player;
     UnityEngine.AI.NavMeshAgent agent;
     PlayerController play_contr;
-    AudioSource audioSource;
-
+    public AudioSource audioSource;
     float sound_cooldown = 1f;
     float attack_cooldown = 1f;
     float elapsed_time = 0f;
-    private Vector3 targetDirection;
 
     void Start()
     {
@@ -44,8 +35,7 @@ public class Cat_AI : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         play_contr = player.GetComponentInChildren<PlayerController>();
         //Overlap step sound for 1/3 of the duration time
-        sound_cooldown = audioSource.clip.length * (agent.speed / 10);
-        attack_anim = GetComponent<Animation>();
+        sound_cooldown = audioSource.clip.length;
     }
 
     void FixedUpdate()
@@ -59,6 +49,7 @@ public class Cat_AI : MonoBehaviour
 
         if (distancePlayer < meele_radius)
         {
+            agent.isStopped = true;
             //anim.SetTrigger("attacking");
             anim.SetBool("isRunning", false);
             anim.SetBool("isWalking", false);
@@ -74,6 +65,7 @@ public class Cat_AI : MonoBehaviour
         }
         else if (distancePlayer < awareness_radius)
         {
+            agent.isStopped = false;
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
 
@@ -121,10 +113,10 @@ public class Cat_AI : MonoBehaviour
         InstantlyTurn(agent.destination);
 
         //Debug.Log(sound_cooldown.ToString());
-        if (elapsed_time > sound_cooldown && !attack)
+        if (elapsed_time > sound_cooldown && distancePlayer > meele_radius)
         {
             elapsed_time = 0f;
-            audioSource.volume = (1 / distancePlayer / distancePlayer);  // Inverse square law
+            audioSource.volume = (1 / distancePlayer );  // Inverse square law
             audioSource.Play();
         }
 
@@ -135,7 +127,6 @@ public class Cat_AI : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        attack = false;
     }
 
     // https://answers.unity.com/questions/1170087/instantly-turn-with-nav-mesh-agent.html

@@ -68,6 +68,7 @@ public class EnemyAI : MonoBehaviour
         {
             //anim.SetTrigger("attacking");
             anim.Play("Attacking");
+            agent.isStopped = true;
             if (elapsed_time > attack_cooldown)
             {
                 elapsed_time = 0f;
@@ -75,8 +76,9 @@ public class EnemyAI : MonoBehaviour
             }
             life_text.gameObject.SetActive(true);
         }
-        else if (distancePlayer < awareness_radius)
+        else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
         {
+            agent.isStopped = false;
             anim.SetBool("walking", true);
             life_text.gameObject.SetActive(false);
             life_text.gameObject.SetActive(false);

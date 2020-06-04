@@ -67,27 +67,27 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.6
+    value: 2.83
   threshold:
-    overrideState: 0
-    value: 3
+    overrideState: 1
+    value: 1.9
   softKnee:
     overrideState: 0
-    value: 0.5
+    value: 0.109
   clamp:
     overrideState: 0
-    value: 1
+    value: -2.07
   diffusion:
     overrideState: 0
-    value: 3.13
+    value: 4.05
   anamorphicRatio:
     overrideState: 0
-    value: 0
+    value: -1
   color:
     overrideState: 0
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 0.058314566, g: 0, b: 0, a: 1}
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   dirtTexture:
     overrideState: 0
@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
   m_Name: Grain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1585,13 +1585,13 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   intensity:
-    overrideState: 1
-    value: 0.1
+    overrideState: 0
+    value: 0.056
   size:
     overrideState: 0
-    value: 1
+    value: 0.91
   lumContrib:
-    overrideState: 1
+    overrideState: 0
     value: 0.643
 --- !u!114 &7533101347390999997
 MonoBehaviour:
@@ -1633,10 +1633,10 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 80.13815, y: 99}
+    value: {x: 62.221226, y: 99}
   minLuminance:
     overrideState: 1
-    value: -9
+    value: -4.8
   maxLuminance:
     overrideState: 1
     value: 9
@@ -1648,7 +1648,7 @@ MonoBehaviour:
     value: 0
   speedUp:
     overrideState: 1
-    value: 3.5
+    value: 2.5
   speedDown:
     overrideState: 1
-    value: 3.5
+    value: 2.5

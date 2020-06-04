@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using System.Linq.Expressions;
 
 public class AnubisController : MonoBehaviour
 {
     [Range(0f, 500f)]
     public float awareness_radius = 10f;
     [Range(0f, 500f)]
-    public float walk_radius = 100f;
+    public float teleport_radius = 20f;
     public float meele_radius;
     public float singleStep = 1f;
     public float speed_multiplier = 2f;
     float original_speed;
     public int meele_power = 2;
+    public float tp_distance = 7f;
 
     bool attack = false;
 
     Animator anim;
-    public Animation attack_anim;
+
+    public AudioSource die_voice;
+    public AudioSource hit_sound;
 
     public int life = 2;
 
@@ -42,7 +45,6 @@ public class AnubisController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         play_contr = player.GetComponentInChildren<PlayerController>();
         //Overlap step sound for 1/3 of the duration time
-        attack_anim = GetComponent<Animation>();
         anim.SetBool("isWalking", true);
     }
 
@@ -82,7 +84,7 @@ public class AnubisController : MonoBehaviour
             agent.SetDestination(player.transform.position);
      
         }
-        else if (distancePlayer > awareness_radius)
+        else if (distancePlayer > awareness_radius && distancePlayer < teleport_radius)
         {
             //Random walk
             anim.SetBool("isWalking", true);
@@ -91,6 +93,24 @@ public class AnubisController : MonoBehaviour
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
 
+            agent.SetDestination(player.transform.position);
+
+        }
+        else if (distancePlayer > teleport_radius)
+        {
+            //Random walk
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isRunning", false);
+            agent.isStopped = true;
+            agent.transform.position = player.transform.position;
+            agent.transform.rotation = player.transform.rotation;
+            agent.transform.position += (-player.transform.forward) * -tp_distance;
+            agent.transform.Rotate(new Vector3(0, 180, 0));
+            agent.isStopped = false;
+
+            die_voice.volume = 10 / distancePlayer;
+            die_voice.Play();
+            Debug.Log("Teleporting");
             agent.SetDestination(player.transform.position);
 
         }

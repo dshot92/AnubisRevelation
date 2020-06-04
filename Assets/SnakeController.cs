@@ -61,6 +61,7 @@ public class SnakeController : MonoBehaviour
 
         if (distancePlayer < meele_radius)
         {
+            agent.isStopped = true;
             //anim.SetTrigger("attacking");
             anim.SetBool("isRunning", false);
             anim.SetBool("isWalking", false);
@@ -76,6 +77,7 @@ public class SnakeController : MonoBehaviour
         }
         else if (distancePlayer < awareness_radius)
         {
+            agent.isStopped = false;
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
 

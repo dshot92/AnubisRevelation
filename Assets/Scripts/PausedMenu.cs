@@ -34,6 +34,7 @@ public class PausedMenu : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
+        audioSource = GameObject.FindObjectsOfType<AudioSource>();
         foreach (AudioSource sound in audioSource)
         {
             sound.Pause();

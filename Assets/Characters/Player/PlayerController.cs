@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Net.Sockets;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,10 +21,14 @@ public class PlayerController : MonoBehaviour
     public float dig_distance_threshold = 2;
     public Vector3 dig_amount = new Vector3(0,-2,0);
     public Slider healtBar;
-    
+    public TextMeshProUGUI coins_GUI;
+    public AudioSource sword_slash;
+
 
     public int life = 10;
     public int max_life = 10;
+
+    public int coins_count = 0;
 
     public Camera cam;
 
@@ -43,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
         // HealtBar update
         healtBar.value = life;
+        coins_GUI.SetText(coins_count.ToString());
 
         if (has_sword)
         {
@@ -58,6 +64,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && elapsed_time > attack_cooldown)
         {
             anim.SetTrigger("attack");
+            if (has_sword) { 
+                sword_slash.Play();
+            }
 
             elapsed_time = 0f;
 
@@ -71,11 +80,31 @@ public class PlayerController : MonoBehaviour
                     Debug.Log("Enemy hitted");
                     GameObject obj = hit.collider.gameObject;
                     obj.GetComponent<EnemyAI>().life -= meele_power;
-                    
+
                     ///KnockBack stuff
                     //Rigidbody agent = obj.GetComponent<Rigidbody>();
-                    //agent.AddForce(obj.transform.forward * -1 * knokbackDist, ForceMode.Impulse);
-                    
+                    //agent.AddForce(obj.transform.forward * -1 * knokbackDist, ForceMode.Impulse);   
+                }
+            }
+
+            if (Physics.Raycast(transform.position, transform.forward, out hit, meele_range))
+            {
+                if (hit.collider.gameObject.CompareTag("Cat"))
+                {
+                    Debug.Log("Enemy hitted");
+                    GameObject obj = hit.collider.gameObject;
+                    obj.GetComponent<Cat_AI>().life -= meele_power;
+                }
+            }
+
+            //Check if enemy is in meele_range AND in front (Camera forward)
+            if (Physics.Raycast(transform.position, transform.forward, out hit, meele_range))
+            {
+                if (hit.collider.gameObject.CompareTag("Snake"))
+                {
+                    Debug.Log("Enemy hitted");
+                    GameObject obj = hit.collider.gameObject;
+                    obj.GetComponent<SnakeController>().life -= meele_power;
                 }
             }
         }

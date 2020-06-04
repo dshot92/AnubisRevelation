@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 		player = GameObject.FindObjectOfType<PlayerController>();
 	}
 	void Awake()
-	{		
+	{
 		if (instance == null)
 		{
 			instance = this;
@@ -42,17 +42,29 @@ public class GameManager : MonoBehaviour
 	}
 	private void Update()
 	{
-		if(player == null)
+		if (SceneManager.GetActiveScene().name.Equals("Level3"))
+		{
+			RenderSettings.fog = false;
+		}
+		else
+		{
+			RenderSettings.fog = true;
+			//RenderSettings.fogColor = new Color(255, 143, 49);
+		}
+
+		if (player == null)
 		{
 			player = GameObject.FindObjectOfType<PlayerController>();
 		}
 
+		
 		if(player.life <= 0)
 		{
 			Debug.Log("GameOver");
 			Invoke("GameOver", pause_time);
 			player.life = player.max_life;
 		}
+
 	}
 
 

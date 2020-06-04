@@ -9,6 +9,8 @@ TagManager:
   - PauseMenu
   - Sand
   - Anubis
+  - Snake
+  - Cat
   layers:
   - Default
   - TransparentFX

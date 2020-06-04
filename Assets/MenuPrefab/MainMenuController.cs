@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
 using UnityEngine.Audio;
 
 public class MainMenuController : MonoBehaviour
@@ -13,6 +14,7 @@ public class MainMenuController : MonoBehaviour
 
     private void Awake()
     {
+        RenderSettings.fog = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         audioSource = GameObject.FindObjectsOfType<AudioSource>();
