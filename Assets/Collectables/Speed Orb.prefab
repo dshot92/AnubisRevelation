@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 250959837241325185}
   - component: {fileID: 9088422495709007031}
   - component: {fileID: 3250501000782180430}
-  - component: {fileID: 8181389051751917559}
   - component: {fileID: 113889228307615354}
   - component: {fileID: 553832753587999887}
+  - component: {fileID: -8603922270244820389}
   m_Layer: 0
   m_Name: Speed Orb
   m_TagString: Untagged
@@ -82,30 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8181389051751917559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3828287816899380370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10dd607d573ec9468d55a14f0674c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_rotating_speed: 2
-  audio: {fileID: 553832753587999887}
-  is_heart: 0
-  healt_increase: 1
-  is_flash: 1
-  speed_seconds: 40
-  speed_multiplier: 2
-  is_force: 0
-  force_multiplier: 0
-  force_seconds: 0
-  is_amulet: 0
-  is_sword: 0
 --- !u!135 &113889228307615354
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -131,7 +107,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42c694b909686484b8b703198ff1cd8d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -215,3 +191,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8603922270244820389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3828287816899380370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0a2c0c1bbda624780788738500b684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_rotating_speed: 2
+  speed_seconds: 40
+  speed_multiplier: 2
+  audio: {fileID: 553832753587999887}

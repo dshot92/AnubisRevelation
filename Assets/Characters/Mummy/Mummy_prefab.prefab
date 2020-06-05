@@ -761,7 +761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: 3353e4f866c39d043a315b41717c9bb7, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Mummy
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: 3353e4f866c39d043a315b41717c9bb7, type: 3}
       propertyPath: m_LocalPosition.y

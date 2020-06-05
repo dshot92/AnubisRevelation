@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3514982004287352196}
   - component: {fileID: 3872594286899860514}
   - component: {fileID: 5933870832881351084}
-  - component: {fileID: -1378282965412551307}
   - component: {fileID: 4437436592756068724}
   - component: {fileID: -6607141976554336298}
+  - component: {fileID: -6811564610420732033}
   m_Layer: 0
   m_Name: Jump Orb
   m_TagString: Untagged
@@ -83,34 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &-1378282965412551307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476502340210712471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10dd607d573ec9468d55a14f0674c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_rotating_speed: 2
-  audio: {fileID: -6607141976554336298}
-  is_heart: 0
-  healt_increase: 1
-  is_flash: 0
-  speed_seconds: 0
-  speed_multiplier: 0
-  is_force: 0
-  force_multiplier: 0
-  force_seconds: 0
-  is_amulet: 0
-  is_sword: 0
-  is_torch: 0
-  is_jump: 1
-  jump_multiplier: 1.5
-  jump_seconds: 40
 --- !u!135 &4437436592756068724
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -136,7 +108,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7ce521c6c93ef824e876cdd92c188d6e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.399
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -220,3 +192,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6811564610420732033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476502340210712471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419bb74a983f5b845b02c87d0090f452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_rotating_speed: 2
+  jump_multiplier: 2
+  jump_seconds: 40
+  audio: {fileID: -6607141976554336298}

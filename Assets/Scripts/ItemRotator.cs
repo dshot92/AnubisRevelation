@@ -58,7 +58,6 @@ public class ItemRotator : MonoBehaviour
     void FixedUpdate()
     {
         transform.RotateAround(Vector3.up, item_rotating_speed * Time.deltaTime);
-        //transform.Rotate(Vector3.up, r_speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)

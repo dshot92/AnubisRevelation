@@ -195,10 +195,13 @@ https://youtu.be/Ern_4rdhOuw
 - [x] Sand Storm Effect on menu???
 - [x] Logic for boss fight (trigget box over separator to start fight)
 - [x] When dying healt should not get up to full before exiting to menu
+- [x] Pause menu loading - saving buttons
+- [x] Boss Healt GUI
 
+- [ ] Handle not spawning torch and sword, if player already has it
+- [ ] Amulet To advance Prompt
 - [ ] dead player sound - Can i slow time when is dead?
 - [ ] Game Over - Win confirmations
-- [ ] Pause menu loading - saving buttons
 - [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
 
 Probably not going to implement

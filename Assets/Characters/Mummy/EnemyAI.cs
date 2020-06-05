@@ -123,6 +123,15 @@ public class EnemyAI : MonoBehaviour
         }
 
         // uPDATE lIFE TEXT
+        switch (life)
+        {
+            case 1:
+                life_text.color = Color.red;
+                break;
+            case 2:
+                life_text.color = Color.yellow;
+                break;
+        }
         life_text.text = (life.ToString());
 
         if (life <= 0)

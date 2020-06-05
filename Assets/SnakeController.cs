@@ -32,7 +32,6 @@ public class SnakeController : MonoBehaviour
     float sound_cooldown = 1f;
     float attack_cooldown = 1f;
     float elapsed_time = 0f;
-    private Vector3 targetDirection;
 
     void Start()
     {
@@ -157,6 +156,15 @@ public class SnakeController : MonoBehaviour
         }
 
         // uPDATE lIFE TEXT
+        switch (life)
+        {
+            case 1:
+                life_text.color = Color.red;
+                break;
+            case 2:
+                life_text.color = Color.yellow;
+                break;
+        }
         life_text.text = (life.ToString());
 
         if (life <= 0)

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4252877590512660874}
   - component: {fileID: 5144009550045842159}
-  - component: {fileID: 318138768666951064}
   - component: {fileID: 1149526230743231387}
+  - component: {fileID: -8486581327063039743}
   m_Layer: 0
   m_Name: coin orb
   m_TagString: Untagged
@@ -48,36 +48,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.27
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &318138768666951064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963234283243111321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10dd607d573ec9468d55a14f0674c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_rotating_speed: 2
-  audio: {fileID: 1149526230743231387}
-  is_heart: 0
-  healt_increase: 1
-  is_flash: 0
-  speed_seconds: 0
-  speed_multiplier: 0
-  is_force: 0
-  force_multiplier: 0
-  force_seconds: 0
-  is_amulet: 0
-  is_sword: 0
-  is_torch: 0
-  is_jump: 0
-  jump_multiplier: 0
-  jump_seconds: 0
-  is_coin: 1
-  coin_value: 10
 --- !u!82 &1149526230743231387
 AudioSource:
   m_ObjectHideFlags: 0
@@ -90,7 +60,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f9535ee4e00dbd5439753061ae97eb70, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -174,6 +144,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8486581327063039743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963234283243111321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9180f44d57835542998d8c6dd16acf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_rotating_speed: 2
+  coin_value: 10
+  audio: {fileID: 1149526230743231387}
 --- !u!1 &4389574755121189789
 GameObject:
   m_ObjectHideFlags: 0

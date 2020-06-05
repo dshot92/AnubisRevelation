@@ -18,11 +18,9 @@ public class AnubisController : MonoBehaviour
     float original_speed;
     public int meele_power = 2;
     public float tp_distance = 7f;
-
-    bool attack = false;
+    public TextMeshProUGUI life_text;
 
     Animator anim;
-
     public AudioSource die_voice;
     public AudioSource hit_sound;
 
@@ -54,26 +52,28 @@ public class AnubisController : MonoBehaviour
 
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
-        Debug.Log(distancePlayer);
         if (distancePlayer < meele_radius)
         {
             //anim.SetTrigger("attacking");
             anim.SetBool("isRunning", false);
             anim.SetBool("isWalking", false);
 
+            life_text.gameObject.SetActive(true);
+
             agent.isStopped = true;
             if (elapsed_time > attack_cooldown)
             {
                 anim.SetTrigger("isAttacking");
                 elapsed_time = 0f;
-                play_contr.life -= meele_power;
+                StartCoroutine(Stop_while_attack());
             }
-            agent.isStopped = false;
         }
         else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
         { 
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", false);
+
+            life_text.gameObject.SetActive(false);
 
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
@@ -85,6 +85,8 @@ public class AnubisController : MonoBehaviour
         {
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
+
+            life_text.gameObject.SetActive(false);
 
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
@@ -109,6 +111,19 @@ public class AnubisController : MonoBehaviour
         }
 
         InstantlyTurn(agent.destination);
+        
+        // uPDATE lIFE TEXT
+        switch (life)
+        {
+            case 1:
+                life_text.color = Color.red;
+                break;
+            case 2:
+                life_text.color = Color.yellow;
+                break;
+        }
+        life_text.text = (life.ToString());
+
 
         if (life <= 0)
         {
@@ -122,5 +137,14 @@ public class AnubisController : MonoBehaviour
         Vector3 direction = (destination - transform.position).normalized;
         Quaternion qDir = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation,qDir, Time.deltaTime * singleStep);
+    }
+
+    private IEnumerator Stop_while_attack()
+    {
+        // 3.533f =  attack time animation
+        // 1.5 animation speed ->  half speed
+        yield return new WaitForSeconds(3.533f * 0.5f);
+        play_contr.life -= meele_power;
+        agent.isStopped = false;
     }
 }

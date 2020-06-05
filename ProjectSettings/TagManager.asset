@@ -11,6 +11,7 @@ TagManager:
   - Anubis
   - Snake
   - Cat
+  - Mummy
   layers:
   - Default
   - TransparentFX

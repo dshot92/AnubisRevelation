@@ -103,9 +103,9 @@ GameObject:
   - component: {fileID: 770786388150472090}
   - component: {fileID: 9206994218767748620}
   - component: {fileID: 792876575988860780}
-  - component: {fileID: 6277016962402148138}
   - component: {fileID: 6922422155370114403}
   - component: {fileID: 3590533387435925084}
+  - component: {fileID: 4714396470729754565}
   m_Layer: 0
   m_Name: Fire Torch Pickup
   m_TagString: Untagged
@@ -176,34 +176,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6277016962402148138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929591266397182929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10dd607d573ec9468d55a14f0674c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_rotating_speed: 2
-  audio: {fileID: 3590533387435925084}
-  is_heart: 0
-  healt_increase: 1
-  is_flash: 0
-  speed_seconds: 0
-  speed_multiplier: 0
-  is_force: 0
-  force_multiplier: 0
-  force_seconds: 0
-  is_amulet: 0
-  is_sword: 0
-  is_torch: 1
-  is_jump: 0
-  jump_multiplier: 0
-  jump_seconds: 0
 --- !u!135 &6922422155370114403
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -229,7 +201,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5a89ea1c927c6634db244c46e32a73f2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.588
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -313,6 +285,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4714396470729754565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929591266397182929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef2b4b03a10b8142a2dfdf9e27f88e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_rotating_speed: 2
+  audio: {fileID: 3590533387435925084}
 --- !u!1001 &576812380996459357
 PrefabInstance:
   m_ObjectHideFlags: 0

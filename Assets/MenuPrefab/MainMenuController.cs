@@ -22,23 +22,23 @@ public class MainMenuController : MonoBehaviour
     public void Level1()
     {
         GameManager.LoadScene("Level1");
-        GameManager.player_coins = 0;
     }
     public void Level2()
     {
         GameManager.LoadScene("Level2");
-        GameManager.player_coins = 0;
-
     }
     public void Level3()
     {
         GameManager.LoadScene("Level3");
-        GameManager.player_coins = 0;
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+    public void Load()
+    {
+        if ( GameManager.saved_times > 0) GameManager.LoadSceneSaved();
     }
 
     public void VolumeUpdate()

@@ -11,9 +11,12 @@ public class PausedMenu : MonoBehaviour
 
     public GameObject pauseCanvas;
     public GameObject optionMenu;
+    PlayerController player;
+    public GameObject gray_back;
 
     private void Start()
     {
+        player = GameObject.FindObjectOfType<PlayerController>();
         audioSource = GameObject.FindObjectsOfType<AudioSource>();
     }
 
@@ -21,6 +24,7 @@ public class PausedMenu : MonoBehaviour
     {
         pauseCanvas.SetActive(false);
         optionMenu.SetActive(false);
+        gray_back.SetActive(false);
 
         foreach (AudioSource sound in audioSource)
         {
@@ -33,6 +37,8 @@ public class PausedMenu : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        gray_back.SetActive(true);
+
 
         audioSource = GameObject.FindObjectsOfType<AudioSource>();
         foreach (AudioSource sound in audioSource)
@@ -43,12 +49,39 @@ public class PausedMenu : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    public void Save()
+    {
+        GameManager.saved_times++;
+        GameManager.save_coint_count = player.coins_count;
+        GameManager.save_healt = player.life;
+        GameManager.save_active_scene = SceneManager.GetActiveScene().name.ToString();
+        GameManager.has_sword = player.has_sword;
+        GameManager.has_torch = player.has_torch;
+        pauseCanvas.SetActive(false);
+        optionMenu.SetActive(false);
+        Time.timeScale = 1;
+        foreach (AudioSource sound in audioSource)
+        {
+            sound.UnPause();
+        }
+    }
+
+    public void Load()
+    {
+        GameManager.LoadState();
+        pauseCanvas.SetActive(false);
+        optionMenu.SetActive(false);
+        Time.timeScale = 1;
+        foreach (AudioSource sound in audioSource)
+        {
+            sound.UnPause();
+        }
+    }
+
     public void MainMenuLoad()
     {
-
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
-       
     }
 
     public void VolumeUpdate()

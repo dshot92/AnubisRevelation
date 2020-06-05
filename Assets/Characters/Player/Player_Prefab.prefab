@@ -597,7 +597,7 @@ MonoBehaviour:
   sword: {fileID: 6354866334512055291}
   torch: {fileID: 1163873478105429707}
   meele_power: 1
-  meele_range: 5
+  meele_range: 12
   knokbackDist: 3
   attack_cooldown: 1
   elapsed_time: 0
@@ -609,7 +609,6 @@ MonoBehaviour:
   life: 10
   max_life: 10
   coins_count: 0
-  cam: {fileID: 3103235594715063711}
 --- !u!65 &2047170821152769021
 BoxCollider:
   m_ObjectHideFlags: 0

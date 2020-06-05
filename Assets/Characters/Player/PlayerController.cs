@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class PlayerController : MonoBehaviour
 {
@@ -30,21 +31,34 @@ public class PlayerController : MonoBehaviour
 
     public int coins_count = 0;
 
-    public Camera cam;
+    Camera cam;
 
     void Start()
     {
+        cam = GameObject.FindObjectOfType<Camera>();
         has_sword = false;
         has_torch = false;
         anim = GetComponent<Animator>();
         sword.SetActive(false);
         torch.SetActive(false);
-        coins_count = GameManager.player_coins;
+        if (GameManager.loading)
+        {
+            GameManager.loading = false;
+            life = GameManager.save_healt;
+            coins_count = GameManager.save_coint_count;
+            has_sword = GameManager.has_sword;
+            has_torch = GameManager.has_torch;
+        }
+        else
+        {
+            coins_count = GameManager.player_coins;
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
         elapsed_time += Time.deltaTime;
 
         // HealtBar update
@@ -69,22 +83,20 @@ public class PlayerController : MonoBehaviour
                 sword_slash.Play();
             }
 
-            elapsed_time = 0f;
 
             RaycastHit hit;
             
+            Debug.DrawRay(cam.transform.position, cam.transform.forward, Color.red);
             //Check if enemy is in meele_range AND in front (Camera forward)
-            if(Physics.Raycast(transform.position, transform.forward, out hit, meele_range))
+            if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, meele_range))
             {
-                if (hit.collider.gameObject.CompareTag("Enemy"))
+                // Reset 
+                elapsed_time = 0f;
+                
+                if (hit.collider.gameObject.CompareTag("Mummy"))
                 {
                     Debug.Log("Enemy hitted");
-                    GameObject obj = hit.collider.gameObject;
-                    obj.GetComponent<EnemyAI>().life -= meele_power;
-
-                    ///KnockBack stuff
-                    //Rigidbody agent = obj.GetComponent<Rigidbody>();
-                    //agent.AddForce(obj.transform.forward * -1 * knokbackDist, ForceMode.Impulse);   
+                    hit.collider.gameObject.GetComponent<EnemyAI>().life -= meele_power;
                 }
             }
 
@@ -93,8 +105,8 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Cat"))
                 {
                     Debug.Log("Enemy hitted");
-                    GameObject obj = hit.collider.gameObject;
-                    obj.GetComponent<Cat_AI>().life -= meele_power;
+                    hit.collider.gameObject.GetComponent<Cat_AI>().life -= meele_power;
+
                 }
             }
 
@@ -104,8 +116,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Snake"))
                 {
                     Debug.Log("Enemy hitted");
-                    GameObject obj = hit.collider.gameObject;
-                    obj.GetComponent<SnakeController>().life -= meele_power;
+                    hit.collider.gameObject.GetComponent<SnakeController>().life -= meele_power;
                 }
             }
 
@@ -115,15 +126,13 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Anubis"))
                 {
                     Debug.Log("Enemy hitted");
-                    GameObject obj = hit.collider.gameObject;
-                    obj.GetComponent<AnubisController>().life -= meele_power;
+                    hit.collider.gameObject.GetComponent<AnubisController>().life -= meele_power;
                 }
             }
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-
             RaycastHit hit;
 
             //Check if enemy is in meele_range AND in front (Camera forward)
@@ -171,27 +180,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            life--;
-        }
+        if (Input.GetKeyDown(KeyCode.O)) life--;
 
-            if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
-        {
-            anim.SetBool("walking", true);
-        }
-        else
-        {
-            anim.SetBool("walking", false);
-        }
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) anim.SetBool("walking", true);
+        else                                                                    anim.SetBool("walking", false);
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            anim.SetBool("running", true);
-        }
-        else
-        {
-            anim.SetBool("running", false);
-        }
+        if (Input.GetKey(KeyCode.LeftShift)) anim.SetBool("running", true);
+        else                                 anim.SetBool("running", false);
+
     }
 }

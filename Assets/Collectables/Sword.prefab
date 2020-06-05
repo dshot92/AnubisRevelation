@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2878739185449397255}
   - component: {fileID: 6532560003784136241}
   - component: {fileID: 690416186905701064}
-  - component: {fileID: 7100455635962147661}
   - component: {fileID: 1118224767373109722}
   - component: {fileID: -7426403663866353898}
+  - component: {fileID: 5172423368571997674}
   m_Layer: 0
   m_Name: Sword
   m_TagString: sword
@@ -83,36 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7100455635962147661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272284287640772116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10dd607d573ec9468d55a14f0674c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_rotating_speed: 2
-  audio: {fileID: 1118224767373109722}
-  is_heart: 0
-  healt_increase: 1
-  is_flash: 0
-  speed_seconds: 40
-  speed_multiplier: 2
-  is_force: 0
-  force_multiplier: 0
-  force_seconds: 0
-  is_amulet: 0
-  is_sword: 1
-  is_torch: 0
-  is_jump: 0
-  jump_multiplier: 0
-  jump_seconds: 0
-  is_coin: 0
-  coin_value: 0
 --- !u!82 &1118224767373109722
 AudioSource:
   m_ObjectHideFlags: 0
@@ -125,7 +95,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 463dea4d0ae68ee40b684fc838d220d6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -222,3 +192,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 5.894191e-10, z: 0.01977763}
+--- !u!114 &5172423368571997674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272284287640772116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ef15de6a0ada54080027f51bda4f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_rotating_speed: 2
+  audio: {fileID: 1118224767373109722}
