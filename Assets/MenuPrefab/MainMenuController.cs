@@ -21,15 +21,19 @@ public class MainMenuController : MonoBehaviour
     }
     public void Level1()
     {
-        SceneManager.LoadScene("Level1");
+        GameManager.LoadScene("Level1");
+        GameManager.player_coins = 0;
     }
     public void Level2()
     {
-        SceneManager.LoadScene("Level2");
+        GameManager.LoadScene("Level2");
+        GameManager.player_coins = 0;
+
     }
     public void Level3()
     {
-        SceneManager.LoadScene("Level3");
+        GameManager.LoadScene("Level3");
+        GameManager.player_coins = 0;
     }
 
     public void Quit()

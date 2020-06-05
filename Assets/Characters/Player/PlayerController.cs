@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         sword.SetActive(false);
         torch.SetActive(false);
+        coins_count = GameManager.player_coins;
     }
 
     // Update is called once per frame

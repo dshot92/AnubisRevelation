@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 	public static GameManager instance = null;
 	public static PlayerController player;
 	public float pause_time = 3f;
+	bool dead = false;
+	public static int player_coins = 0;
 
 	private void OnEnable()
 	{
@@ -28,7 +30,6 @@ public class GameManager : MonoBehaviour
 			Destroy(this);
 		}
 		player = GameObject.FindObjectOfType<PlayerController>();
-
 	}
 
 	void Setup()
@@ -38,38 +39,37 @@ public class GameManager : MonoBehaviour
 
 	public static void NextScene(int scene)
 	{
+		// Loading next scene implies game progress, don't overwrite coin count
 		SceneManager.LoadScene(scene);
+	}
+
+	public static void LoadScene(string scene)
+	{
+		// Choosing from menu resets coins count
+		SceneManager.LoadScene(scene);
+		player_coins = 0;
 	}
 	private void Update()
 	{
-		if (SceneManager.GetActiveScene().name.Equals("Level3"))
-		{
-			RenderSettings.fog = false;
-		}
-		else
-		{
-			RenderSettings.fog = true;
-		}
+		_ = SceneManager.GetActiveScene().name.Equals("Level3") ? RenderSettings.fog = false : RenderSettings.fog = true;
 
-		if (player == null)
-		{
-			player = GameObject.FindObjectOfType<PlayerController>();
-		}
+		if (player == null) player = GameObject.FindObjectOfType<PlayerController>();
 
-		
-		if(player.life <= 0)
+		if(player.life <= 0 && !dead)
 		{
 			Debug.Log("GameOver");
 			Invoke("GameOver", pause_time);
-			player.life = player.max_life;
+			dead = true;
+			player_coins = player.coins_count;
 		}
-
 	}
-
 
 	void GameOver()
 	{
-		SceneManager.LoadScene("MainMenu");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		player.life = player.max_life;
+		dead = false;
+		player.coins_count = player_coins;
 	}
 }
 

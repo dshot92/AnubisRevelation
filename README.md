@@ -194,11 +194,13 @@ https://youtu.be/Ern_4rdhOuw
 - [x] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [x] Sand Storm Effect on menu???
 - [x] Logic for boss fight (trigget box over separator to start fight)
+- [x] When dying healt should not get up to full before exiting to menu
 
-- [ ] When dying healt should not get up to full before exiting to menu
+- [ ] dead player sound - Can i slow time when is dead?
+- [ ] Game Over - Win confirmations
 - [ ] Pause menu loading - saving buttons
-- [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
 
 Probably not going to implement
+- [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??

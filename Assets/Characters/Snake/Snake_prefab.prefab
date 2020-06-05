@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   awareness_radius: 40
-  meele_radius: 2
+  meele_radius: 4
   walk_radius: 100
   singleStep: 30
   speed_multiplier: 2
