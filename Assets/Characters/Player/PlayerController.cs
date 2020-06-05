@@ -107,6 +107,17 @@ public class PlayerController : MonoBehaviour
                     obj.GetComponent<SnakeController>().life -= meele_power;
                 }
             }
+
+            //Check if enemy is in meele_range AND in front (Camera forward)
+            if (Physics.Raycast(transform.position, transform.forward, out hit, meele_range))
+            {
+                if (hit.collider.gameObject.CompareTag("Anubis"))
+                {
+                    Debug.Log("Enemy hitted");
+                    GameObject obj = hit.collider.gameObject;
+                    obj.GetComponent<AnubisController>().life -= meele_power;
+                }
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.E))

@@ -56,71 +56,95 @@ public class SnakeController : MonoBehaviour
         elapsed_time += Time.deltaTime;
         anim.SetBool("isWalking", true);
 
-        //calculate distance e direction to player.
+
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
-
-        if (distancePlayer < meele_radius)
+        //calculate distance e direction to player.
+        if (!play_contr.has_torch)
         {
-            agent.isStopped = true;
-            //anim.SetTrigger("attacking");
-            anim.SetBool("isRunning", false);
-            anim.SetBool("isWalking", false);
-
-            anim.Play("SnakeArmature|Snake_Attack");
-
-            if (elapsed_time > attack_cooldown)
+            if (distancePlayer < meele_radius * 2)
             {
-                elapsed_time = 0f;
-                play_contr.life -= meele_power;
+                life_text.gameObject.SetActive(true);
             }
-            life_text.gameObject.SetActive(true);
+            else
+            {
+                life_text.gameObject.SetActive(false);
+            }
+
+            if (distancePlayer < meele_radius)
+            {
+                agent.isStopped = true;
+                //anim.SetTrigger("attacking");
+                anim.SetBool("isRunning", false);
+                anim.SetBool("isWalking", false);
+
+                anim.Play("SnakeArmature|Snake_Attack");
+
+                if (elapsed_time > attack_cooldown)
+                {
+                    elapsed_time = 0f;
+                    play_contr.life -= meele_power;
+                }
+            }
+            else if (distancePlayer < awareness_radius)
+            {
+                agent.isStopped = false;
+                anim.SetBool("isWalking", true);
+                anim.SetBool("isRunning", true);
+
+                agent.speed = original_speed;
+                agent.speed *= speed_multiplier;
+
+                //life_text.gameObject.SetActive(false);
+                //walk torwards player
+                agent.SetDestination(player.transform.position);
+            }
+            else if (distancePlayer > awareness_radius)
+            {
+                //Random walk
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isRunning", false);
+
+
+                agent.speed = original_speed;
+                agent.speed /= speed_multiplier;
+
+                //life_text.gameObject.SetActive(false);
+
+
+                /// https://answers.unity.com/questions/475066/how-to-get-a-random-point-on-navmesh.html
+
+                // If 1/5 of destination left rework another random one
+                ///TODO
+                // life value could act as a swiftness multiplier, creating a more chaotically pattern based on remaining lifes points
+                if (agent.remainingDistance < walk_radius / 5)
+                {
+                    Vector3 randomDirection = Random.insideUnitSphere * walk_radius;
+                    randomDirection += transform.position;
+                    UnityEngine.AI.NavMeshHit hit;
+                    Vector3 finalPosition = Vector3.zero;
+                    if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, walk_radius, 1))
+                    {
+                        finalPosition = hit.position;
+                    }
+                    agent.SetDestination(finalPosition);
+                }
+            }
         }
-        else if (distancePlayer < awareness_radius)
+        else
         {
-            agent.isStopped = false;
+            Vector3 finalPosition = transform.position - player.transform.position;
+            if(distancePlayer < meele_radius)
+            {
+                agent.SetDestination(finalPosition);
+            }
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
 
-
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
-
-            life_text.gameObject.SetActive(false);
-            life_text.gameObject.SetActive(false);
-            //walk torwards player
-            agent.SetDestination(player.transform.position);
         }
-        else if (distancePlayer > awareness_radius)
-        {
-            //Random walk
-            anim.SetBool("isWalking", false);
-            anim.SetBool("isRunning", false);
 
-
-            agent.speed = original_speed;
-            agent.speed /= speed_multiplier;
-
-            life_text.gameObject.SetActive(false);
-
-
-            /// https://answers.unity.com/questions/475066/how-to-get-a-random-point-on-navmesh.html
-
-            // If 1/5 of destination left rework another random one
-            ///TODO
-            // life value could act as a swiftness multiplier, creating a more chaotically pattern based on remaining lifes points
-            if (agent.remainingDistance < walk_radius / 5)
-            {
-                Vector3 randomDirection = Random.insideUnitSphere * walk_radius;
-                randomDirection += transform.position;
-                UnityEngine.AI.NavMeshHit hit;
-                Vector3 finalPosition = Vector3.zero;
-                if (UnityEngine.AI.NavMesh.SamplePosition(randomDirection, out hit, walk_radius, 1))
-                {
-                    finalPosition = hit.position;
-                }
-                agent.SetDestination(finalPosition);
-            }
-        }
+        
 
         InstantlyTurn(agent.destination);
 

@@ -62,7 +62,7 @@ public class EnemyAI : MonoBehaviour
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
 
-        //Debug.Log(distancePlayer.ToString());
+        if (distancePlayer < meele_radius * 2) life_text.gameObject.SetActive(true);
 
         if (distancePlayer < meele_radius)
         {
@@ -74,13 +74,11 @@ public class EnemyAI : MonoBehaviour
                 elapsed_time = 0f;
                 play_contr.life -= meele_power;
             }
-            life_text.gameObject.SetActive(true);
         }
         else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
         {
             agent.isStopped = false;
             anim.SetBool("walking", true);
-            life_text.gameObject.SetActive(false);
             life_text.gameObject.SetActive(false);
             //walk torwards player
             agent.SetDestination(player.transform.position);

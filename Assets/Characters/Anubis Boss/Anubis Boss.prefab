@@ -227,12 +227,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4159184914343516540}
   - component: {fileID: 6283198113634022406}
-  - component: {fileID: 226712045206335119}
-  - component: {fileID: -3454544369458102586}
   - component: {fileID: 2895667877589236005}
   - component: {fileID: 7955983767864373256}
   - component: {fileID: 1363872088135327697}
   - component: {fileID: -3910836104278572007}
+  - component: {fileID: 226712045206335119}
+  - component: {fileID: -3454544369458102586}
   m_Layer: 0
   m_Name: Anubis Boss
   m_TagString: Anubis
@@ -275,50 +275,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &226712045206335119
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144826334158859119}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 5
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &-3454544369458102586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144826334158859119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53ec04469d670145a82756edc48a4fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  awareness_radius: 20
-  teleport_radius: 50
-  meele_radius: 6
-  singleStep: 4
-  speed_multiplier: 2
-  meele_power: 2
-  tp_distance: 7
-  die_voice: {fileID: 0}
-  hit_sound: {fileID: 0}
-  life: 2
 --- !u!136 &2895667877589236005
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -329,7 +285,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.57
+  m_Radius: 0.39
   m_Height: 1.71
   m_Direction: 1
   m_Center: {x: 0.09, y: 0.86, z: 0.06}
@@ -343,7 +299,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.57
+  m_Radius: 0.39
   m_Height: 1.71
   m_Direction: 1
   m_Center: {x: 0.09, y: 0.86, z: 0.06}
@@ -539,6 +495,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!195 &226712045206335119
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144826334158859119}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-3454544369458102586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144826334158859119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53ec04469d670145a82756edc48a4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awareness_radius: 20
+  teleport_min_distance: 80
+  teleport_max_distance: 100
+  meele_radius: 6
+  singleStep: 4
+  speed_multiplier: 2
+  meele_power: 2
+  tp_distance: 7
+  die_voice: {fileID: 0}
+  hit_sound: {fileID: 0}
+  life: 5
 --- !u!1 &1175825778344494751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2293,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3646521077223331696, guid: 8abf9aabbe94ccd429eff09aeb9c0a3d, type: 3}
+  - {fileID: 2100000, guid: 35df1744a57459a45b60f736ddb66e75, type: 2}
   - {fileID: 5629084884208175553, guid: 8abf9aabbe94ccd429eff09aeb9c0a3d, type: 3}
   - {fileID: -8699436558653759460, guid: 8abf9aabbe94ccd429eff09aeb9c0a3d, type: 3}
   m_StaticBatchInfo:

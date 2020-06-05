@@ -211,13 +211,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.15
+  m_Height: 2.78
   m_Radius: 0.91
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: -0.05, z: 0}
+  m_Center: {x: 0, y: 0.27, z: 0}
 --- !u!114 &3103235594724414047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,37 +1946,42 @@ PrefabInstance:
     - target: {fileID: 7570510515378247500, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.46226418
+      value: 0.6037736
       objectReference: {fileID: 0}
     - target: {fileID: 7570510515378247500, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.46226418
+      value: 0.6037736
       objectReference: {fileID: 0}
     - target: {fileID: 7570510515378247500, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.46226418
+      value: 0.6037736
       objectReference: {fileID: 0}
     - target: {fileID: 8109256584645645958, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4287203721
+      value: 4288782753
       objectReference: {fileID: 0}
     - target: {fileID: 8109256584645645958, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_fontColor.r
-      value: 0.5377358
+      value: 0.6320754
       objectReference: {fileID: 0}
     - target: {fileID: 8109256584645645958, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_fontColor.g
-      value: 0.5377358
+      value: 0.6320754
       objectReference: {fileID: 0}
     - target: {fileID: 8109256584645645958, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
       propertyPath: m_fontColor.b
-      value: 0.5377358
+      value: 0.6320754
+      objectReference: {fileID: 0}
+    - target: {fileID: 8109256584645645958, guid: 742ce1a84bd8d3a44a388ce0846f74da,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742ce1a84bd8d3a44a388ce0846f74da, type: 3}

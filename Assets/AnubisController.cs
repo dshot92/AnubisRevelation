@@ -6,10 +6,12 @@ using System.Linq.Expressions;
 
 public class AnubisController : MonoBehaviour
 {
-    [Range(0f, 500f)]
+    [Range(0f, 100f)]
     public float awareness_radius = 10f;
-    [Range(0f, 500f)]
-    public float teleport_radius = 20f;
+    [Range(0f, 100f)]
+    public float teleport_min_distance = 20f;
+    [Range(0f, 100f)]
+    public float teleport_max_distance = 50f;
     public float meele_radius;
     public float singleStep = 1f;
     public float speed_multiplier = 2f;
@@ -24,28 +26,25 @@ public class AnubisController : MonoBehaviour
     public AudioSource die_voice;
     public AudioSource hit_sound;
 
-    public int life = 2;
+    public int life = 10;
 
     GameObject player;
     UnityEngine.AI.NavMeshAgent agent;
     PlayerController play_contr;
 
-    float sound_cooldown = 1f;
     float attack_cooldown = 3.32f / 1.5f; //attack animation time duration
     float elapsed_time = 0f;
-    private Vector3 targetDirection;
 
     void Start()
     {
-
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         agent.updateRotation = false;
         original_speed = agent.speed;
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
         play_contr = player.GetComponentInChildren<PlayerController>();
-        //Overlap step sound for 1/3 of the duration time
-        anim.SetBool("isWalking", true);
+        anim.SetBool("isRunning", false);
+        anim.SetBool("isWalking", false);
     }
 
     void FixedUpdate()
@@ -55,7 +54,7 @@ public class AnubisController : MonoBehaviour
 
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
-
+        Debug.Log(distancePlayer);
         if (distancePlayer < meele_radius)
         {
             //anim.SetTrigger("attacking");
@@ -71,22 +70,19 @@ public class AnubisController : MonoBehaviour
             }
             agent.isStopped = false;
         }
-        else if (distancePlayer < awareness_radius)
-        {
+        else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
+        { 
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", false);
-
 
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
 
-            //walk torwards player
             agent.SetDestination(player.transform.position);
      
         }
-        else if (distancePlayer > awareness_radius && distancePlayer < teleport_radius)
+        else if (distancePlayer > awareness_radius && distancePlayer < teleport_min_distance)
         {
-            //Random walk
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
 
@@ -94,11 +90,9 @@ public class AnubisController : MonoBehaviour
             agent.speed *= speed_multiplier;
 
             agent.SetDestination(player.transform.position);
-
         }
-        else if (distancePlayer > teleport_radius)
+        else if (life < 4 &&  distancePlayer > teleport_min_distance && distancePlayer < teleport_max_distance)
         {
-            //Random walk
             anim.SetBool("isWalking", false);
             anim.SetBool("isRunning", false);
             agent.isStopped = true;
@@ -112,28 +106,21 @@ public class AnubisController : MonoBehaviour
             die_voice.Play();
             Debug.Log("Teleporting");
             agent.SetDestination(player.transform.position);
-
         }
 
         InstantlyTurn(agent.destination);
-
-        // uPDATE lIFE TEXT
 
         if (life <= 0)
         {
             Destroy(gameObject);
         }
-        attack = false;
     }
 
-    // https://answers.unity.com/questions/1170087/instantly-turn-with-nav-mesh-agent.html
     private void InstantlyTurn(Vector3 destination)
     {
-        //When on target -> dont rotate!
         if ((destination - transform.position).magnitude < 0.1f) return;
-
         Vector3 direction = (destination - transform.position).normalized;
         Quaternion qDir = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, qDir, Time.deltaTime * singleStep);
+        transform.rotation = Quaternion.Slerp(transform.rotation,qDir, Time.deltaTime * singleStep);
     }
 }

@@ -47,6 +47,8 @@ public class Cat_AI : MonoBehaviour
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
 
+        if (distancePlayer < meele_radius * 2) life_text.gameObject.SetActive(true);
+
         if (distancePlayer < meele_radius)
         {
             agent.isStopped = true;
@@ -61,7 +63,6 @@ public class Cat_AI : MonoBehaviour
                 elapsed_time = 0f;
                 play_contr.life -= meele_power;
             }
-            life_text.gameObject.SetActive(true);
         }
         else if (distancePlayer < awareness_radius)
         {
@@ -73,7 +74,6 @@ public class Cat_AI : MonoBehaviour
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
 
-            life_text.gameObject.SetActive(false);
             life_text.gameObject.SetActive(false);
             //walk torwards player
             agent.SetDestination(player.transform.position);

@@ -14,7 +14,7 @@ public class LifeTextEnemy : MonoBehaviour
     void FixedUpdate()
     {
         //transform.forward = player.transform.forward * -1;
-        transform.LookAt(player.transform.position, Vector3.up);
+        transform.LookAt(player.transform.position + new Vector3(0,2,0), Vector3.up);
         transform.Rotate(new Vector3(0, 180, 0));
     }
 }

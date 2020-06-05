@@ -60,7 +60,7 @@ All’interno del gioco ci saranno a disposizione 3 differenti **power-up** per 
 
 
 ### File Sources
-Done with Blender:
+Done in Blender:
 -Amulet.fbx
 -Flash.fbx
 -pyramid.fbx
@@ -68,6 +68,9 @@ Done with Blender:
 -biceps.fbx
 -desert6.fbx
 -sarcofagus.fbx
+-coin.fbx
+-vase.fbx
+-logo_3d.fbx
 
 LowPoly Environment Pack
 https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
@@ -141,6 +144,8 @@ https://www.youtube.com/watch?v=r9Ii50ZiEYU
 Rattle Snake Shaker Snaking A4 Sound Effect
 https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rattlesnake-281
 
+Boss Fight sound
+https://youtu.be/Ern_4rdhOuw
 
 
 ------
@@ -188,8 +193,12 @@ https://www.fesliyanstudios.com/royalty-free-sound-effects-download/rattlesnake-
 - [x] Boss TP behind after some distance?
 - [x] Prompt to get Sword GUI (Screen Space, not to get blurred) and level 1 start
 - [x] Sand Storm Effect on menu???
+- [x] Logic for boss fight (trigget box over separator to start fight)
 
-- [ ] Logic for boss fight
+- [ ] When dying healt should not get up to full before exiting to menu
+- [ ] Pause menu loading - saving buttons
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
+
+Probably not going to implement
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??

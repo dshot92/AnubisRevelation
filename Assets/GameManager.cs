@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour
 		else
 		{
 			RenderSettings.fog = true;
-			//RenderSettings.fogColor = new Color(255, 143, 49);
 		}
 
 		if (player == null)
