@@ -14,6 +14,12 @@ public class Torch_Controller : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManager.has_torch)
+        {
+            gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.transform.position -= new Vector3(0, -50, 0);
+        }
         transform.RotateAround(Vector3.up, item_rotating_speed * Time.deltaTime);
     }
 
@@ -25,10 +31,10 @@ public class Torch_Controller : MonoBehaviour
         {
             gameObject.GetComponent<Collider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
-            player.has_torch = true;
             StartCoroutine(PlaySound());
             // really bad, but this particles system remaining alive is annoying me
             gameObject.transform.position -= new Vector3(0, -50, 0);
+            player.has_torch = true;
         }
     }
 

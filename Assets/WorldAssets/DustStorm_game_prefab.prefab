@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7614213809636492608}
   - component: {fileID: 7614213809636408544}
   m_Layer: 0
-  m_Name: DustStorm
+  m_Name: DustStorm_game_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2072,11 +2072,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   ForceModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 27.3
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -2182,7 +2182,7 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 8.7
       minScalar: 0
       maxCurve:
         serializedVersion: 2

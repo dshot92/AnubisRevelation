@@ -197,12 +197,12 @@ https://youtu.be/Ern_4rdhOuw
 - [x] When dying healt should not get up to full before exiting to menu
 - [x] Pause menu loading - saving buttons
 - [x] Boss Healt GUI
+- [x] Handle not spawning torch and sword, if player already has it
+- [x] Amulet To advance Prompt
 
-- [ ] Handle not spawning torch and sword, if player already has it
-- [ ] Amulet To advance Prompt
+- [ ] Controll Enemy hitbox
 - [ ] dead player sound - Can i slow time when is dead?
 - [ ] Game Over - Win confirmations
-- [ ] Transition Animaiton during Scene Loading ( To get to next Level find Amulet)
 
 Probably not going to implement
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))

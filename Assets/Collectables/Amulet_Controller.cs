@@ -24,7 +24,7 @@ public class Amulet_Controller : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-
+            GameManager.player_coins = other.gameObject.GetComponentInChildren<PlayerController>().coins_count;
             gameObject.GetComponent<Collider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(PlaySoundBeforeNextLevel());

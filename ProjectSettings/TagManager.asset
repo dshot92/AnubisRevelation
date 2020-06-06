@@ -12,6 +12,7 @@ TagManager:
   - Snake
   - Cat
   - Mummy
+  - Amulet
   layers:
   - Default
   - TransparentFX

@@ -166,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -361,6 +361,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9425442
@@ -500,6 +508,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f7c2deb7be33c61418c105b4da4da2d8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc767c10d36eaa748aaa5b008bf78528, type: 3}
+--- !u!4 &37135663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040091851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &43523500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,6 +524,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -766,6 +788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &65132759
@@ -849,6 +876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -946,6 +978,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1194,6 +1234,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 188b600c70cd7ef4397f467614edf179, type: 3}
+--- !u!4 &94533639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1815360564}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &94761979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1275,6 +1321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -1530,10 +1581,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.16025107
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -1915,7 +1981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1947,6 +2013,133 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2852b271d0d088643a66c25efe4b5aa0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
+--- !u!1 &123935729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123935730}
+  - component: {fileID: 123935731}
+  m_Layer: 0
+  m_Name: Wind sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123935730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123935729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1370553262}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &123935731
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123935729}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0f54ffd16994319458ec2c12ccb9f041, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.216
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &132438966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2024,10 +2217,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15588398
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -2102,7 +2310,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -2633,6 +2841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &177185562
@@ -2716,6 +2929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -2889,7 +3107,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -2978,7 +3196,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -3089,10 +3307,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15334128
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -3225,6 +3458,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3410,7 +3651,7 @@ PrefabInstance:
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
@@ -3566,10 +3807,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14458664
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -3973,10 +4229,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.13424447
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -4632,6 +4903,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3234509
@@ -4835,7 +5114,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -4894,6 +5173,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5319,6 +5606,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.69988364
@@ -5454,10 +5749,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15372936
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -5709,7 +6019,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -5820,10 +6130,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.13405941
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -5918,10 +6243,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -6072,10 +6407,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.16120662
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -6241,6 +6591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -6478,6 +6833,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7045,6 +7408,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7250533
@@ -7336,6 +7707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &434714278
@@ -7348,6 +7724,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7493,7 +7877,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -7677,6 +8061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -7971,6 +8360,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8355,7 +8752,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -8444,7 +8841,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -8668,6 +9065,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -19424,6 +19826,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.702686
@@ -19873,6 +20283,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9317207
@@ -20020,6 +20438,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20184,6 +20610,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.183296
@@ -20252,6 +20686,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20362,7 +20804,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -20493,6 +20935,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!4 &579621095 stripped
@@ -20550,7 +20997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20639,7 +21086,7 @@ PrefabInstance:
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
@@ -20795,10 +21242,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14005083
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -20884,6 +21346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &601787857
@@ -20896,6 +21363,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21073,7 +21548,7 @@ GameObject:
   - component: {fileID: 609793494}
   - component: {fileID: 609793493}
   m_Layer: 0
-  m_Name: background_noise
+  m_Name: Crickets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21183,11 +21658,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609793492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -415.54904, y: 52.550797, z: -22.230827}
+  m_LocalPosition: {x: -443.83, y: 45.000282, z: 56.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1370553262}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &612188184
 PrefabInstance:
@@ -21268,6 +21743,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21409,6 +21892,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &643100964 stripped
@@ -21514,10 +22002,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14175367
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -21603,6 +22106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &650089758
@@ -21615,6 +22123,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21836,6 +22352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -22214,7 +22735,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -22432,6 +22953,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2083518254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &705285005
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 37135663}
+    m_Modifications:
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.722
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.573
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.19231056
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.72677314
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.22556506
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6196272
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 325.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 99.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331933939645790262, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Torch Prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 188b600c70cd7ef4397f467614edf179, type: 3}
 --- !u!1001 &711685127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22636,6 +23226,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23034,6 +23632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &738430123 stripped
@@ -23188,7 +23791,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -23707,7 +24310,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -23823,6 +24426,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &785935038
@@ -23835,6 +24443,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23904,6 +24520,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24018,7 +24642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -24207,6 +24831,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.961038
@@ -24302,6 +24934,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6110451
@@ -24367,10 +25007,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -24532,10 +25182,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -24609,6 +25269,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cdffaf8ed820f9429268e7951e8d7c3, type: 3}
+--- !u!1001 &875067598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1625247272}
+    m_Modifications:
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.864
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.239
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.25848553
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7189427
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5420801
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.349937
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 323.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 102.061005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 69.643005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331933939645790262, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Torch Prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 188b600c70cd7ef4397f467614edf179, type: 3}
 --- !u!1001 &881091653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24616,10 +25345,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -24775,6 +25514,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &886311963 stripped
@@ -24813,6 +25557,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25137,10 +25889,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1603721
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -25328,10 +26095,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15922523
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -25416,6 +26198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -25764,7 +26551,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -25823,6 +26610,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25892,6 +26687,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26172,6 +26975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &940210438
@@ -26416,6 +27224,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4522972
@@ -26551,10 +27367,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14609955
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -37047,6 +37878,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.375358
@@ -37197,6 +38036,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.147735
@@ -37255,6 +38102,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0639803112633414287ad5370575b92d, type: 3}
+--- !u!1001 &985189412
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 94533639}
+    m_Modifications:
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.0142384
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.6202252
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5078322
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6368801
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.30748826
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5829109
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.40006214
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 235.968
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 9.099991
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.820806
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.741986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.823433
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331933939645790262, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Torch Prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 188b600c70cd7ef4397f467614edf179, type: 3}
 --- !u!1001 &989398411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37400,7 +38331,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -37678,6 +38609,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1494121946}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1025187767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1720190751}
+    m_Modifications:
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.10907211
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6946547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21689415
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6771373
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 333.317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.287
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 9.157001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331933939645790262, guid: 188b600c70cd7ef4397f467614edf179,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire Torch Prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 188b600c70cd7ef4397f467614edf179, type: 3}
 --- !u!1001 &1027714122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37760,6 +38760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1030486925
@@ -37769,10 +38774,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -37901,7 +38916,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -37996,7 +39011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -38064,6 +39079,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38168,7 +39191,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -38586,10 +39609,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14407247
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -38692,6 +39730,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38942,6 +39988,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &1107944782
@@ -39083,7 +40134,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -39283,6 +40334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1127301700
@@ -39330,7 +40386,7 @@ PrefabInstance:
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
@@ -39512,10 +40568,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14690298
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -39558,10 +40629,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -39718,6 +40799,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39906,7 +40995,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -40499,6 +41588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &1179463304 stripped
@@ -40717,6 +41811,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -40968,7 +42067,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -41072,7 +42171,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -41434,6 +42533,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7160196
@@ -41700,6 +42807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!4 &1238706937 stripped
@@ -41889,6 +43001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -42150,7 +43267,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -42209,6 +43326,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42349,6 +43474,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -42587,6 +43717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1272155310
@@ -42790,7 +43925,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -43122,7 +44257,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -43373,6 +44508,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43729,6 +44872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &1370553261
@@ -43759,8 +44907,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1684201949}
+  - {fileID: 123935730}
+  - {fileID: 609793494}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1376757232
 PrefabInstance:
@@ -44003,7 +45153,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -44243,6 +45393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -44487,6 +45642,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44862,10 +46025,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14284806
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -45027,6 +46205,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45345,6 +46531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6470628
@@ -45447,6 +46641,14 @@ PrefabInstance:
     - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45788,6 +46990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1501681110
@@ -45872,6 +47079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1506193624
@@ -45951,10 +47163,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14987576
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -45974,6 +47201,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46140,6 +47375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -46318,6 +47558,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -46602,6 +47847,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.388124
@@ -46670,6 +47923,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46924,7 +48185,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -47099,6 +48360,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1562677601
@@ -47111,6 +48377,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47474,6 +48748,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1573531619
@@ -47590,10 +48869,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -47744,10 +49033,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.16627052
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -48144,6 +49448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1 &1622763089
@@ -48309,6 +49618,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a4ee24299bd5654c8255fb60048c9dc, type: 3}
+--- !u!4 &1625247272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 800277154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1628118059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cc767c10d36eaa748aaa5b008bf78528,
@@ -48416,6 +49731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -48573,7 +49893,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -48798,7 +50118,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -48877,7 +50197,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -48962,6 +50282,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49167,10 +50495,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14315975
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -49518,6 +50861,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50163,13 +51514,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15794572
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
+--- !u!4 &1720190751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1831561970}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1723861390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50261,6 +51633,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50523,6 +51903,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.0780573
@@ -50618,6 +52006,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_05(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 162562, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 403832, guid: a720e50218b29a740ae0603e31abb4b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.263313
@@ -50686,6 +52082,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50800,7 +52204,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -50844,6 +52248,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50948,7 +52360,7 @@ PrefabInstance:
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 2595639064205015831, guid: 188b600c70cd7ef4397f467614edf179,
         type: 3}
@@ -51168,6 +52580,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51432,7 +52852,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -51476,6 +52896,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51545,6 +52973,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51653,7 +53089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -51969,6 +53405,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!4 &1831133113 stripped
@@ -52026,7 +53467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 443896, guid: 61999d21bc5ab4d4281112e62066a9c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52135,10 +53576,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14190456
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -52225,10 +53681,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.13407804
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -52309,10 +53780,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.13655193
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -52636,6 +54122,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.0157547
@@ -52705,6 +54199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.667167
@@ -52770,10 +54272,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -52857,6 +54369,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53389,10 +54909,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1611531
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -53406,6 +54941,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53481,6 +55024,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53659,6 +55210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1925362139
@@ -53668,10 +55224,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -54119,10 +55685,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14565915
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -54203,10 +55784,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.15285969
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -54680,6 +56276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &1975072488
@@ -54797,6 +56398,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.823509
@@ -54910,7 +56519,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
@@ -54989,7 +56598,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -55197,6 +56806,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.87993
@@ -55297,6 +56914,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55542,10 +57167,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.14154886
       objectReference: {fileID: 0}
+    - target: {fileID: 4439580540520949822, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521088736, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_12(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439580540521107892, guid: b0f55981ab6d3704bbfe29d52f3e5aa1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f55981ab6d3704bbfe29d52f3e5aa1, type: 3}
@@ -55848,10 +57488,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -55935,6 +57585,14 @@ PrefabInstance:
     - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56146,10 +57804,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -56337,7 +58005,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -56892,7 +58560,7 @@ PrefabInstance:
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5098636963650566436, guid: 3878e2d0ad1ee5e42a70d3c683c55abf,
         type: 3}
@@ -57020,6 +58688,14 @@ PrefabInstance:
     - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_Name
       value: Rock_Square_m_2C_19(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 165314, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 439342, guid: d1bf07d32eaf9734a86cd33250316563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57533,6 +59209,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Square_m_2C_20(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 186014, guid: 0639803112633414287ad5370575b92d, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 463364, guid: 0639803112633414287ad5370575b92d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.18803
@@ -57610,10 +59294,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 889037412}
     m_Modifications:
+    - target: {fileID: 2696804023527518858, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_07(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2696804023527537146, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2696804023527780348, guid: 4cdffaf8ed820f9429268e7951e8d7c3,
         type: 3}
@@ -57769,6 +59463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
 --- !u!1001 &2121277216
@@ -57852,6 +59551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -58051,6 +59755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rock_Tiles_m_2C_13(Polybrush Clone)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1875403394158934359, guid: 7536d0cd89bbcd1448b70e4404bd9939,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7536d0cd89bbcd1448b70e4404bd9939, type: 3}
@@ -58351,7 +60060,7 @@ PrefabInstance:
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5433741697970224356, guid: 86ecce5013a43f44dbe1721522a89020,
         type: 3}

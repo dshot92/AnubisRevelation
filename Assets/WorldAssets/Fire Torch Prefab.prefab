@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1730059215266932101}
   - component: {fileID: 5962207252704242720}
   m_Layer: 0
-  m_Name: Fire Torch pickup
+  m_Name: Fire Torch Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7331933939645790262}
   m_LocalRotation: {x: 0.45875984, y: -0.53808874, z: -0.53808874, w: -0.45875984}
-  m_LocalPosition: {x: -86.646805, y: 20.553, z: -134.71498}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 8495666662636697595}

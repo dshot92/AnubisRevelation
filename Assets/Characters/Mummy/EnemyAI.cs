@@ -74,6 +74,7 @@ public class EnemyAI : MonoBehaviour
                 elapsed_time = 0f;
                 play_contr.life -= meele_power;
             }
+            agent.isStopped = false;
         }
         else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
         {
@@ -88,7 +89,6 @@ public class EnemyAI : MonoBehaviour
             //Random walk
             anim.SetBool("walking", true);
             life_text.gameObject.SetActive(false);
-
 
             /// https://answers.unity.com/questions/475066/how-to-get-a-random-point-on-navmesh.html
 

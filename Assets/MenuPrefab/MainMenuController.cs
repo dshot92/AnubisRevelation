@@ -17,19 +17,33 @@ public class MainMenuController : MonoBehaviour
         RenderSettings.fog = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+    }
+    void Setup()
+    {
         audioSource = GameObject.FindObjectsOfType<AudioSource>();
+        volume_slider.value = GameManager.volume_slider;
     }
     public void Level1()
     {
         GameManager.LoadScene("Level1");
+        GameManager.has_sword = false;
+        GameManager.has_torch = false;
+        GameManager.player_coins = 0;
+
     }
     public void Level2()
     {
         GameManager.LoadScene("Level2");
+        GameManager.has_sword = false;
+        GameManager.has_torch = false;
+        GameManager.player_coins = 0;
     }
     public void Level3()
     {
         GameManager.LoadScene("Level3");
+        GameManager.has_sword = false;
+        GameManager.has_torch = false;
+        GameManager.player_coins = 0;
     }
 
     public void Quit()
@@ -43,10 +57,6 @@ public class MainMenuController : MonoBehaviour
 
     public void VolumeUpdate()
     {
-        foreach (AudioSource sound in audioSource)
-        {
-            sound.volume = volume_slider.value;
-        }
+        GameManager.volume_slider = volume_slider.value;
     }
-
 }

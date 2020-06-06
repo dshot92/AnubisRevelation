@@ -36,8 +36,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cam = GameObject.FindObjectOfType<Camera>();
-        has_sword = false;
-        has_torch = false;
+        has_sword = GameManager.has_sword;
+        has_torch = GameManager.has_torch;
         anim = GetComponent<Animator>();
         sword.SetActive(false);
         torch.SetActive(false);
@@ -46,8 +46,10 @@ public class PlayerController : MonoBehaviour
             GameManager.loading = false;
             life = GameManager.save_healt;
             coins_count = GameManager.save_coint_count;
-            has_sword = GameManager.has_sword;
-            has_torch = GameManager.has_torch;
+            has_sword = GameManager.save_has_sword;
+            has_torch = GameManager.save_has_torch;
+            if(has_sword) GameManager.has_sword = has_sword;
+            if(has_torch) GameManager.has_torch = has_torch;
         }
         else
         {
@@ -67,11 +69,13 @@ public class PlayerController : MonoBehaviour
 
         if (has_sword)
         {
+            GameManager.has_sword = true;
             sword.SetActive(true);
         }
 
         if (has_torch)
         {
+            GameManager.has_torch = true;
             torch.SetActive(true);
         }
 

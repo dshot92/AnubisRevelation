@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -12,17 +13,24 @@ public class GameManager : MonoBehaviour
 	public static GameManager instance = null;
 	public static GameObject player_object;
 	public static PlayerController player;
-	public float pause_time = 3f;
+	public float pause_time = 1f;
 	bool dead = false;
+
+	public static string scene_to_load;
+
 	public static int player_coins = 0;
+	public static bool has_torch = false;
+	public static bool has_sword = false;
 
 	public static int saved_times = 0;
 	public static int save_coint_count = 0;
+	public static int save_healt = 20;
+	public static bool save_has_torch = false;
+	public static bool save_has_sword = false;
 	public static string save_active_scene = "Level1";
-	public static int save_healt = 10;
-	public static bool has_torch = false;
-	public static bool has_sword = false;
 	public static bool loading = false;
+
+	public static float volume_slider = 0.3f;
 
 	private void OnEnable()
 	{
@@ -56,8 +64,8 @@ public class GameManager : MonoBehaviour
 
 	public static void LoadScene(string scene)
 	{
-		// Choosing from menu resets coins count
-		SceneManager.LoadScene(scene);
+		scene_to_load = scene;
+		SceneManager.LoadScene("Loading");
 		player_coins = 0;
 	}
 
@@ -66,12 +74,16 @@ public class GameManager : MonoBehaviour
 		// Choosing from menu resets coins count
 		SceneManager.LoadScene(save_active_scene);
 		loading = true;
+		has_torch = false;
+		has_sword = false;
 	}
 	private void Update()
 	{
 		_ = SceneManager.GetActiveScene().name.Equals("Level3") ? RenderSettings.fog = false : RenderSettings.fog = true;
 
 		if (player == null) player = GameObject.FindObjectOfType<PlayerController>();
+
+		player_coins = player.coins_count;
 
 		if(player.life <= 0 && !dead)
 		{
@@ -80,6 +92,8 @@ public class GameManager : MonoBehaviour
 			dead = true;
 			player_coins = player.coins_count;
 		}
+
+		AudioListener.volume = GameManager.volume_slider;
 	}
 
 	public static void LoadState()
