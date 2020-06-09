@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f2091a8f61fa641b0f76e83a291011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume_slider: {fileID: 0}
+  volume_slider: {fileID: 4629242570454138830}
   audioSource: []
   pauseCanvas: {fileID: 5158275648436743815}
   optionMenu: {fileID: 5158275646999544479}

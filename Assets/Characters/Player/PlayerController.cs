@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        healtBar.maxValue = life;
         cam = GameObject.FindObjectOfType<Camera>();
         has_sword = GameManager.has_sword;
         has_torch = GameManager.has_torch;
@@ -55,6 +56,8 @@ public class PlayerController : MonoBehaviour
         {
             coins_count = GameManager.player_coins;
         }
+
+        if (has_sword) meele_power++;
     }
 
     // Update is called once per frame
@@ -100,7 +103,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Mummy"))
                 {
                     Debug.Log("Enemy hitted");
-                    hit.collider.gameObject.GetComponent<EnemyAI>().life -= meele_power;
+                    hit.collider.gameObject.GetComponent<Mummy_AI>().life -= meele_power;
                 }
             }
 

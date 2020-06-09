@@ -14,7 +14,7 @@ private float fadeEnd = 0;
 private float fadeTime = 1;
 private float pauseTime = 0;
 private Color32 defaultCol;
-private EnemyAI enemy;
+private Mummy_AI enemy;
 
 void Start (){
 
@@ -45,10 +45,9 @@ void Start (){
  
 }
 
- 
 void Update (){
 
-    if(enemy == null) enemy = gameObject.GetComponent<EnemyAI>();
+    if(enemy == null) enemy = gameObject.GetComponent<Mummy_AI>();
 
     if (enemy.life <= 0)
     {

@@ -8,6 +8,7 @@ public class Amulet_Controller : MonoBehaviour
 
     public float item_rotating_speed = 2f;
     public AudioSource audio;
+    public bool final_amulet = false;
 
     private void Setup()
     {
@@ -27,8 +28,8 @@ public class Amulet_Controller : MonoBehaviour
             GameManager.player_coins = other.gameObject.GetComponentInChildren<PlayerController>().coins_count;
             gameObject.GetComponent<Collider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
-            StartCoroutine(PlaySoundBeforeNextLevel());
-
+            if (final_amulet) StartCoroutine(PlaySoundBeforeEndScreen());
+            else StartCoroutine(PlaySoundBeforeNextLevel());
         }
     }
     public IEnumerator PlaySoundBeforeNextLevel()
@@ -36,5 +37,11 @@ public class Amulet_Controller : MonoBehaviour
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
         GameManager.NextScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public IEnumerator PlaySoundBeforeEndScreen()
+    {
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        SceneManager.LoadScene("EndScene");
     }
 }

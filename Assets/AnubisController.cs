@@ -23,6 +23,7 @@ public class AnubisController : MonoBehaviour
     Animator anim;
     public AudioSource die_voice;
     public AudioSource hit_sound;
+    public AudioSource punch_sound;
 
     public int life = 10;
 
@@ -30,8 +31,10 @@ public class AnubisController : MonoBehaviour
     UnityEngine.AI.NavMeshAgent agent;
     PlayerController play_contr;
 
-    float attack_cooldown = 3.32f / 1.5f; //attack animation time duration
+    float attack_cooldown = (3.533f * 0.5f); //attack animation time duration
+    public float teleport_cooldown = 15f;
     float elapsed_time = 0f;
+    float elapsed_time_tp = 0f;
 
     void Start()
     {
@@ -49,27 +52,35 @@ public class AnubisController : MonoBehaviour
     {
         //sound timer
         elapsed_time += Time.deltaTime;
+        elapsed_time_tp += Time.deltaTime;
 
         //calculate distance e direction to player.
         float distancePlayer = Vector3.Distance(agent.transform.position, player.transform.position);
-        if (distancePlayer < meele_radius)
+        if (distancePlayer < meele_radius && elapsed_time > attack_cooldown)
         {
-            //anim.SetTrigger("attacking");
+            agent.SetDestination(player.transform.position);
+            InstantlyTurnAttack();
             anim.SetBool("isRunning", false);
             anim.SetBool("isWalking", false);
 
             life_text.gameObject.SetActive(true);
 
-            agent.isStopped = true;
+            Debug.DrawRay(transform.position, player.transform.position - transform.position, Color.red, 100000f);
             if (elapsed_time > attack_cooldown)
             {
-                anim.SetTrigger("isAttacking");
-                elapsed_time = 0f;
-                StartCoroutine(Stop_while_attack());
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, player.transform.position - transform.position, out hit, meele_radius))
+                {
+                    if (hit.collider.gameObject.CompareTag("Player"))
+                    {
+                        StartCoroutine(Stop_while_attack());
+                    }
+                }
             }
         }
         else if (distancePlayer < awareness_radius && distancePlayer > meele_radius)
         { 
+            agent.SetDestination(player.transform.position);
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", false);
 
@@ -78,11 +89,12 @@ public class AnubisController : MonoBehaviour
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
 
-            agent.SetDestination(player.transform.position);
      
         }
         else if (distancePlayer > awareness_radius && distancePlayer < teleport_min_distance)
         {
+            agent.SetDestination(player.transform.position);
+            
             anim.SetBool("isWalking", true);
             anim.SetBool("isRunning", true);
 
@@ -90,11 +102,10 @@ public class AnubisController : MonoBehaviour
 
             agent.speed = original_speed;
             agent.speed *= speed_multiplier;
-
-            agent.SetDestination(player.transform.position);
         }
-        else if (life < 4 &&  distancePlayer > teleport_min_distance && distancePlayer < teleport_max_distance)
+        else if ( distancePlayer > teleport_min_distance && distancePlayer < teleport_max_distance)
         {
+            agent.SetDestination(player.transform.position);
             anim.SetBool("isWalking", false);
             anim.SetBool("isRunning", false);
             agent.isStopped = true;
@@ -107,7 +118,23 @@ public class AnubisController : MonoBehaviour
             die_voice.volume = 10 / distancePlayer;
             die_voice.Play();
             Debug.Log("Teleporting");
+        }
+        else if ( life < 5 && elapsed_time_tp > teleport_cooldown)
+        {
+            elapsed_time_tp = 0;
             agent.SetDestination(player.transform.position);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isRunning", false);
+            agent.isStopped = true;
+            agent.transform.position = player.transform.position;
+            agent.transform.rotation = player.transform.rotation;
+            agent.transform.position += (-player.transform.forward) * -tp_distance;
+            agent.transform.Rotate(new Vector3(0, 180, 0));
+            agent.isStopped = false;
+
+            die_voice.volume = 10 / distancePlayer;
+            die_voice.Play();
+            Debug.Log("Teleporting");
         }
 
         InstantlyTurn(agent.destination);
@@ -143,8 +170,21 @@ public class AnubisController : MonoBehaviour
     {
         // 3.533f =  attack time animation
         // 1.5 animation speed ->  half speed
-        yield return new WaitForSeconds(3.533f * 0.5f);
+        agent.isStopped = true;
+        elapsed_time = 0f;
+        anim.SetTrigger("isAttacking");
+        punch_sound.Play();
+        yield return new WaitForSeconds(attack_cooldown);
         play_contr.life -= meele_power;
         agent.isStopped = false;
+    }
+    private void InstantlyTurnAttack()
+    {
+        //When on target -> dont rotate!
+        if ((player.transform.position - transform.position).magnitude < 0.1f) return;
+
+        Vector3 direction = (player.transform.position - transform.position).normalized;
+        Quaternion qDir = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, qDir, Time.deltaTime * singleStep);
     }
 }
