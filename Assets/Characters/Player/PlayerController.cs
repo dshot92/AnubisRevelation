@@ -17,17 +17,23 @@ public class PlayerController : MonoBehaviour
     public int meele_power = 1;
     public float meele_range = 2;
     public float knokbackDist;
+    public float sun_cooldown = 2f;
     public float attack_cooldown = 1f;
     public float elapsed_time = 0f;
+    public float elapsed_time_sun = 0f;
     public float dig_distance_threshold = 2;
     public Vector3 dig_amount = new Vector3(0,-2,0);
     public Slider healtBar;
     public TextMeshProUGUI coins_GUI;
     public AudioSource sword_slash;
+    public AudioSource death_sound;
+
+    GameObject sun;
 
 
     public int life = 10;
     public int max_life = 10;
+    bool dead = false;
 
     public int coins_count = 0;
 
@@ -35,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        sun = GameObject.FindGameObjectWithTag("Sun");
         healtBar.maxValue = life;
         cam = GameObject.FindObjectOfType<Camera>();
         has_sword = GameManager.has_sword;
@@ -65,6 +72,24 @@ public class PlayerController : MonoBehaviour
     {
 
         elapsed_time += Time.deltaTime;
+        elapsed_time_sun += Time.deltaTime;
+
+        /*
+        if(elapsed_time_sun > sun_cooldown)
+        {
+            RaycastHit hit;
+            Debug.DrawRay(transform.position, sun.transform.position - transform.position, Color.red, 10f);
+            if (Physics.Raycast(transform.position, sun.transform.position - transform.position, out hit))
+            {
+                if (hit.collider.gameObject.CompareTag("Sun"))
+                {
+                    elapsed_time_sun = 0f;
+                    Debug.Log("hitting Sun");
+                    life -= 1;
+                }
+            }
+        }
+        */
 
         // HealtBar update
         healtBar.value = life;
@@ -187,7 +212,14 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if(life <= 0 && !dead)
+        {
+            dead = true;
+            death_sound.Play();
+        }
+
         if (Input.GetKeyDown(KeyCode.O)) life--;
+        if (Input.GetKeyDown(KeyCode.I)) life = max_life;
 
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) anim.SetBool("walking", true);
         else                                                                    anim.SetBool("walking", false);

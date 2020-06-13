@@ -201,9 +201,9 @@ https://youtu.be/Ern_4rdhOuw
 - [x] Amulet To advance Prompt
 - [x] Control Enemy hitbox
 - [x] Game Over - Win confirmations
-
-- [ ] dead player sound - Can i slow time when is dead?
+- [x] dead player sound - Can i slow time when is dead?
 
 Probably not going to implement
+- [ ] Slowly depleteing life if under sunlight??
 - [ ] Load - Save (Binary Formatter!! - NO( *Player prefs have no transform data* ))
 - [ ] Final build to have only 1 player and don't destroy him while scene switching??

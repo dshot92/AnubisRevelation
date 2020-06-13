@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
 	public static bool loading = false;
 
 	public static float volume_slider = 0.3f;
+
+	static float slow_time = 0.5f;
 
 	private void OnEnable()
 	{
@@ -86,10 +89,21 @@ public class GameManager : MonoBehaviour
 
 		if(player.life <= 0 && !dead)
 		{
-			Debug.Log("GameOver");
-			Invoke("GameOver", pause_time);
-			dead = true;
-			player_coins = player.coins_count;
+			if(Time.timeScale <= slow_time)
+			{
+				Time.timeScale = 1;
+				dead = true;
+				player_coins = player.coins_count;
+				player.GetComponentInParent<FirstPersonController>().enabled = false;
+				player.GetComponentInParent<Animator>().enabled = false;
+				Debug.Log(Time.timeScale);
+				StartCoroutine(GameOver(pause_time));
+			}
+			else
+			{
+				//Debug.Log(Time.timeScale);
+				Time.timeScale -= Time.deltaTime * 0.5f;
+			}
 		}
 
 		AudioListener.volume = GameManager.volume_slider;
@@ -101,8 +115,9 @@ public class GameManager : MonoBehaviour
 	}
 
 
-	void GameOver()
+	IEnumerator GameOver(float pause_time)
 	{
+		yield return new WaitForSeconds(pause_time);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		player.life = player.max_life;
 		dead = false;

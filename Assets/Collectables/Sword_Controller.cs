@@ -16,7 +16,7 @@ public class Sword_Controller : MonoBehaviour
     {
         if (GameManager.has_sword)
         {
-            gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         transform.RotateAround(Vector3.up, item_rotating_speed * Time.deltaTime);
@@ -28,8 +28,7 @@ public class Sword_Controller : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            //StartCoroutine(PlaySound());
-            gameObject.GetComponent<Collider>().enabled = false;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             other.gameObject.GetComponentInChildren<PlayerController>().meele_power++;
             StartCoroutine(PlaySound());
@@ -41,5 +40,6 @@ public class Sword_Controller : MonoBehaviour
     {
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
+        Destroy(gameObject);
     }
 }
