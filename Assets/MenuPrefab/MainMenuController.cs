@@ -15,8 +15,8 @@ public class MainMenuController : MonoBehaviour
     private void Awake()
     {
         RenderSettings.fog = false;
-        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     void Setup()
     {

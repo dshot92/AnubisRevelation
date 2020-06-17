@@ -106,6 +106,13 @@ public class GameManager : MonoBehaviour
 			}
 		}
 
+		if (SceneManager.GetActiveScene().buildIndex == 4)
+		{
+			Screen.lockCursor = false;
+			UnityEngine.Cursor.lockState = CursorLockMode.None;
+			UnityEngine.Cursor.visible = true;
+		}
+
 		AudioListener.volume = GameManager.volume_slider;
 	}
 

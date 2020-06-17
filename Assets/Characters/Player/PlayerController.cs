@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using System.Reflection;
 
 public class PlayerController : MonoBehaviour
 {
@@ -127,7 +128,7 @@ public class PlayerController : MonoBehaviour
                 
                 if (hit.collider.gameObject.CompareTag("Mummy"))
                 {
-                    Debug.Log("Enemy hitted");
+                    //Debug.Log("Enemy hitted");
                     hit.collider.gameObject.GetComponent<Mummy_AI>().life -= meele_power;
                 }
             }
@@ -136,7 +137,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Cat"))
                 {
-                    Debug.Log("Enemy hitted");
+                    //Debug.Log("Enemy hitted");
                     hit.collider.gameObject.GetComponent<Cat_AI>().life -= meele_power;
 
                 }
@@ -147,7 +148,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Snake"))
                 {
-                    Debug.Log("Enemy hitted");
+                    //Debug.Log("Enemy hitted");
                     hit.collider.gameObject.GetComponent<SnakeController>().life -= meele_power;
                 }
             }
@@ -157,7 +158,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Anubis"))
                 {
-                    Debug.Log("Enemy hitted");
+                    //Debug.Log("Enemy hitted");
                     hit.collider.gameObject.GetComponent<AnubisController>().life -= meele_power;
                 }
             }
@@ -220,6 +221,37 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O)) life--;
         if (Input.GetKeyDown(KeyCode.I)) life = max_life;
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            FindObjectOfType<AnubisController>().life = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SnakeController[] snakes = FindObjectsOfType<SnakeController>();
+            foreach (SnakeController snake in snakes)
+            {
+                snake.life--;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Mummy_AI[] mummies = FindObjectsOfType<Mummy_AI>();
+            foreach (Mummy_AI mummy in mummies)
+            {
+                mummy.life--;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            Cat_AI[] cats = FindObjectsOfType<Cat_AI>();
+            foreach (Cat_AI cat in cats)
+            {
+                cat.life--;
+            }
+        }
 
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) anim.SetBool("walking", true);
         else                                                                    anim.SetBool("walking", false);
