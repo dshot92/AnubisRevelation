@@ -233,9 +233,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 5
+  m_WalkSpeed_BASELINE: 0
   m_RunSpeed: 10
+  m_RunSpeed_BASELINE: 0
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 10
+  m_JumpSpeed_BASELINE: 0
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
   m_MouseLook:
@@ -862,7 +865,18 @@ MonoBehaviour:
   has_torch: 0
   sword: {fileID: 6354866334512055291}
   torch: {fileID: 1163873478105429707}
+  speed_orb: {fileID: 3828287816899380370, guid: 1a4ee24299bd5654c8255fb60048c9dc,
+    type: 3}
+  strong_orb: {fileID: 2812228245633022434, guid: ff78bb65cdad91749b21ae723a2f2271,
+    type: 3}
+  jump_orb: {fileID: 476502340210712471, guid: e5f9cae5735e4bb44be7ebb3374a03af, type: 3}
+  heal_orb: {fileID: 2019661998822822809, guid: db7c53b47bfc6b5459871d90b703c1a0,
+    type: 3}
+  coin_orb: {fileID: 963234283243111321, guid: c47cf9d6541c3dc42981d51f82abc28b, type: 3}
+  sword_orb: {fileID: 1272284287640772116, guid: 045bf3132a5970044b26454b354cd919,
+    type: 3}
   meele_power: 1
+  meele_power_BASELINE: 0
   meele_range: 12
   knokbackDist: 3
   sun_cooldown: 2
@@ -875,6 +889,7 @@ MonoBehaviour:
   coins_GUI: {fileID: 2364707105945120199}
   sword_slash: {fileID: 4024901546058750490}
   death_sound: {fileID: 3298345229401671932}
+  keybindings: {fileID: 1503110189757876864}
   life: 20
   max_life: 20
   coins_count: 0
@@ -2025,6 +2040,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eaacfc4e37b6914988a9955d6f1968e, type: 3}
+--- !u!1 &6354866332880088714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2eaacfc4e37b6914988a9955d6f1968e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3103235594766481283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8673871503841827834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3220319501169496967, guid: 2eaacfc4e37b6914988a9955d6f1968e,
@@ -2043,12 +2064,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3103235594766481283}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6354866332880088714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2eaacfc4e37b6914988a9955d6f1968e,
-    type: 3}
-  m_PrefabInstance: {fileID: 3103235594766481283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5789655994300529473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2060,6 +2075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Coins_GUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937321450940379585, guid: 742ce1a84bd8d3a44a388ce0846f74da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5789655993504402814, guid: 742ce1a84bd8d3a44a388ce0846f74da,
         type: 3}
@@ -2283,3 +2303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1503110189757876864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4937321450940379585, guid: 742ce1a84bd8d3a44a388ce0846f74da,
+    type: 3}
+  m_PrefabInstance: {fileID: 5789655994300529473}
+  m_PrefabAsset: {fileID: 0}

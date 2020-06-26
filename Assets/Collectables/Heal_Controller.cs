@@ -33,6 +33,13 @@ public class Heal_Controller : MonoBehaviour
     public IEnumerator PlaySound()
     {
         audio.Play();
+
         yield return new WaitForSeconds(audio.clip.length);
+        StartCoroutine(Destroy());
+    }
+    public IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
     }
 }

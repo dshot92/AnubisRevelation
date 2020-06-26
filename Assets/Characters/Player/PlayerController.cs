@@ -15,7 +15,14 @@ public class PlayerController : MonoBehaviour
     public bool has_torch;
     public GameObject sword;
     public GameObject torch;
+    public GameObject speed_orb;
+    public GameObject strong_orb;
+    public GameObject jump_orb;
+    public GameObject heal_orb;
+    public GameObject coin_orb;
+    public GameObject sword_orb;
     public int meele_power = 1;
+    public int meele_power_BASELINE;
     public float meele_range = 2;
     public float knokbackDist;
     public float sun_cooldown = 2f;
@@ -31,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     GameObject sun;
 
+    public GameObject keybindings;
 
     public int life = 10;
     public int max_life = 10;
@@ -42,6 +50,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        meele_power_BASELINE = meele_power;
         sun = GameObject.FindGameObjectWithTag("Sun");
         healtBar.maxValue = life;
         cam = GameObject.FindObjectOfType<Camera>();
@@ -101,11 +110,21 @@ public class PlayerController : MonoBehaviour
             GameManager.has_sword = true;
             sword.SetActive(true);
         }
+        else
+        {
+            GameManager.has_sword = false;
+            sword.SetActive(false);
+        }
 
         if (has_torch)
         {
             GameManager.has_torch = true;
             torch.SetActive(true);
+        }
+        else
+        {
+            GameManager.has_torch = false;
+            torch.SetActive(false);
         }
 
 
@@ -219,45 +238,45 @@ public class PlayerController : MonoBehaviour
             death_sound.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.O)) life--;
-        if (Input.GetKeyDown(KeyCode.I)) life = max_life;
+        if (Input.GetKey(KeyCode.H)) keybindings.SetActive(true); 
+        else keybindings.SetActive(false);
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            FindObjectOfType<AnubisController>().life = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            SnakeController[] snakes = FindObjectsOfType<SnakeController>();
-            foreach (SnakeController snake in snakes)
-            {
-                snake.life--;
-            }
-        }
-
+        //Orbs cheats
+        if (Input.GetKeyDown(KeyCode.Alpha6)) Instantiate(speed_orb, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Alpha7)) Instantiate(strong_orb, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Alpha8)) Instantiate(jump_orb, transform.position + new Vector3(0,1,0), Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Alpha9)) Instantiate(coin_orb, transform.position + new Vector3(0,1,0), Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Alpha0)) Instantiate(heal_orb, transform.position + new Vector3(0,1,0), Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.P)) life--;
+        if (Input.GetKeyDown(KeyCode.L)) has_torch = !has_torch;
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Mummy_AI[] mummies = FindObjectsOfType<Mummy_AI>();
-            foreach (Mummy_AI mummy in mummies)
+            if (has_sword) 
             {
-                mummy.life--;
+                has_sword = !has_sword;
+                meele_power_BASELINE--;
+                meele_power = meele_power_BASELINE;
+            }
+            else
+            {
+                Instantiate(sword_orb, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
             }
         }
+        // Enemies Cheat
+        if (Input.GetKeyDown(KeyCode.Y)) foreach (Mummy_AI mummy in FindObjectsOfType<Mummy_AI>()) mummy.life--;
+        if (Input.GetKeyDown(KeyCode.U)) foreach (Cat_AI cat in FindObjectsOfType<Cat_AI>()) cat.life--;
+        if (Input.GetKeyDown(KeyCode.I)) foreach (SnakeController snake in FindObjectsOfType<SnakeController>()) snake.life--;
+        if (Input.GetKeyDown(KeyCode.O)) FindObjectOfType<AnubisController>().life--;
 
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            Cat_AI[] cats = FindObjectsOfType<Cat_AI>();
-            foreach (Cat_AI cat in cats)
-            {
-                cat.life--;
-            }
-        }
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) anim.SetBool("walking", true);
-        else                                                                    anim.SetBool("walking", false);
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
+            anim.SetBool("walking", true);
+        else 
+            anim.SetBool("walking", false);
 
-        if (Input.GetKey(KeyCode.LeftShift)) anim.SetBool("running", true);
-        else                                 anim.SetBool("running", false);
-
+        if (Input.GetKey(KeyCode.LeftShift)) 
+            anim.SetBool("running", true);
+        else 
+            anim.SetBool("running", false);
     }
 }

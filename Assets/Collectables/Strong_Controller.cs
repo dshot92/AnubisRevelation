@@ -5,7 +5,7 @@ using UnityEngine;
 public class Strong_Controller : MonoBehaviour
 {
     public float item_rotating_speed = 2f;
-    public int force_multiplier;
+    public int force_multiplier = 2;
     public float force_seconds;
     public AudioSource audio;
 
@@ -37,14 +37,20 @@ public class Strong_Controller : MonoBehaviour
         audio.Play();
 
         yield return new WaitForSeconds(audio.clip.length);
+        StartCoroutine(Destroy());
+    }
+    public IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(force_seconds + 2);
+        Destroy(gameObject);
     }
     public IEnumerator Player_IncreaseMeele(PlayerController p)
     {
-        p.meele_power += force_multiplier;
+        p.meele_power = p.meele_power_BASELINE + force_multiplier;
 
         yield return new WaitForSeconds(force_seconds);
 
-        p.meele_power -= force_multiplier;
+        p.meele_power = p.meele_power_BASELINE - force_multiplier;
         //Destroy(gameObject);
     }
 }

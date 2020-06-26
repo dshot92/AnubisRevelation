@@ -13,9 +13,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
     {
         [SerializeField] private bool m_IsWalking;
         [SerializeField] public float m_WalkSpeed;
+        [SerializeField] public float m_WalkSpeed_BASELINE;
         [SerializeField] public float m_RunSpeed;
+        [SerializeField] public float m_RunSpeed_BASELINE;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] public float m_JumpSpeed;
+        [SerializeField] public float m_JumpSpeed_BASELINE;
         [SerializeField] private float m_StickToGroundForce;
         [SerializeField] private float m_GravityMultiplier;
         [SerializeField] private MouseLook m_MouseLook;
@@ -57,6 +60,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
+            m_WalkSpeed_BASELINE = m_WalkSpeed;
+            m_RunSpeed_BASELINE = m_RunSpeed;
+            m_JumpSpeed_BASELINE = m_JumpSpeed;
         }
 
 

@@ -40,17 +40,24 @@ public class Speed_Controller : MonoBehaviour
         audio.Play();
         
         yield return new WaitForSeconds(audio.clip.length);
+        StartCoroutine(Destroy());
+    }
+    public IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(speed_seconds + 2 );
+        Destroy(gameObject);
     }
 
     public IEnumerator Player_speedup(GameObject player)
     {
         FirstPersonController p = player.GetComponent<FirstPersonController>();
-        p.m_RunSpeed *= speed_multiplier;
-        p.m_WalkSpeed *= speed_multiplier;
+        p.m_RunSpeed = p.m_RunSpeed_BASELINE * speed_multiplier;
+        p.m_WalkSpeed = p.m_WalkSpeed_BASELINE * speed_multiplier;
         
         yield return new WaitForSeconds(speed_seconds);
 
-        p.m_RunSpeed /= speed_multiplier;
-        p.m_WalkSpeed /= speed_multiplier;
+        p.m_RunSpeed = p.m_RunSpeed_BASELINE; 
+        p.m_WalkSpeed = p.m_WalkSpeed_BASELINE;
     }
+
 }

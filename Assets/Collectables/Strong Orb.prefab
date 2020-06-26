@@ -204,6 +204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item_rotating_speed: 2
-  force_multiplier: 1
+  force_multiplier: 2
   force_seconds: 30
   audio: {fileID: 231952684389683402}

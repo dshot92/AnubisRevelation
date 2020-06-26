@@ -31,6 +31,7 @@ public class Sword_Controller : MonoBehaviour
             gameObject.GetComponent<SphereCollider>().enabled = false;
             gameObject.GetComponent<MeshRenderer>().enabled = false;
             other.gameObject.GetComponentInChildren<PlayerController>().meele_power++;
+            other.gameObject.GetComponentInChildren<PlayerController>().meele_power_BASELINE++;
             StartCoroutine(PlaySound());
             player.has_sword = true;
         }

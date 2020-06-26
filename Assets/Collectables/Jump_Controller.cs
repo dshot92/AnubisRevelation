@@ -36,14 +36,21 @@ public class Jump_Controller : MonoBehaviour
     public IEnumerator PlaySound()
     {
         audio.Play();
+
         yield return new WaitForSeconds(audio.clip.length);
+        StartCoroutine(Destroy());
+    }
+    public IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(jump_seconds + 2);
+        Destroy(gameObject);
     }
 
     public IEnumerator Player_IncreaseJump(GameObject player)
     {
         FirstPersonController p = player.GetComponent<FirstPersonController>();
-        p.m_JumpSpeed *= jump_multiplier;
+        p.m_JumpSpeed = p.m_JumpSpeed_BASELINE * jump_multiplier;
         yield return new WaitForSeconds(jump_seconds);
-        p.m_JumpSpeed /= jump_multiplier;
+        p.m_JumpSpeed = p.m_JumpSpeed_BASELINE;
     }
 }
